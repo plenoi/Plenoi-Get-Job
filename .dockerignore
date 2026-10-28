@@ -1,0 +1,7 @@
+.git
+.github
+.deploy-secrets
+.openai
+README.md
+jobs.json
+node_modules

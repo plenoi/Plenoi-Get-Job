@@ -40,3 +40,18 @@ python -m http.server 8000
 - ตัวเอกใส่ชุดนักศึกษา มช. ในภาพฉากหลัก เลือกเพศและทรงผม Pixel Art ได้ หรือใช้แบบไม่ระบุ
 
 - ตัวเอกปรับทรงผมได้ 20 แบบและเลือกสีผม 10 สี พร้อมตัวอย่าง avatar สดในหน้าใบสมัคร; สีหน้าเปลี่ยนตามความเหนื่อยล้าระหว่างเหตุการณ์
+
+## Deploy with Docker Compose
+
+The production app is static and keeps CV processing in the browser, so it does not use a database or writable application volume. The container serves the read-only build behind the server Caddy proxy at `/Plenoi-Get-Job/`; its admin status page is protected with HTTP Basic Auth at `/Plenoi-Get-Job/admin/`. The generated admin credential is stored locally in the ignored `.deploy-secrets/admin-login.txt` file and is never committed.
+
+On the server, from `/opt/ai-app/plenoi-get-job`, use:
+
+```sh
+docker compose ps
+docker compose logs --tail=100 web
+docker compose up -d --build
+docker compose down
+```
+
+The Compose project joins the existing proxy network and publishes no host port. Rebuild and start it with `docker compose up -d --build` after updating the source/build.

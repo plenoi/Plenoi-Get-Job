@@ -1,0 +1,6 @@
+
+# Local deployment credentials and environment files
+.deploy-secrets/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,41 @@
+name: plenoi-get-job
+services:
+  web:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile
+    image: plenoi-get-job:1.0.0
+    container_name: plenoi-get-job-web
+    restart: unless-stopped
+    user: "101:101"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 32
+    mem_limit: 64m
+    cpus: 0.25
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m,mode=1777
+    expose: [8080]
+    networks:
+      proxy:
+        aliases: [plenoi-get-job-web]
+    secrets: [admin_htpasswd]
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, http://127.0.0.1:8080/healthz]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    logging:
+      driver: local
+      options:
+        max-size: "5m"
+        max-file: "3"
+secrets:
+  admin_htpasswd:
+    file: .deploy-secrets/admin.htpasswd
+networks:
+  proxy:
+    external: true
+    name: vps-mmit-bird-proxy
