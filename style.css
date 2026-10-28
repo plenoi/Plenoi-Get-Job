@@ -5,3 +5,5 @@ select{background:#101a28;border:1px solid #394c62;border-radius:3px;color:var(-
 
 
 .jobdetails{margin-top:10px;border-top:1px solid #293a4d;padding-top:7px;color:#b9c6d3;font-size:11px}.jobdetails summary{color:var(--blue);cursor:pointer}.jobdetails p{display:block;overflow:visible;-webkit-line-clamp:unset;margin:8px 0;line-height:1.65}.jobdetails b{color:#ecdda9}
+
+.ending-art canvas{height:260px;max-height:40vh}.ending-art{max-width:720px;margin:8px auto 25px}.ending-art .caption{font-size:9px}
