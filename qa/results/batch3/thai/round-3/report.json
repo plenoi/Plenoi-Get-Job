@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "buildHash": "b3ac8a88e77027cc76b9a2b7e1190bec346e3e309a518a6161392788d75b7edf",
+  "role": "thai",
+  "round": 3,
+  "seed": 1003,
+  "batch": "batch3",
+  "care": false,
+  "policy": "reviewer-script",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 188,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 2,
+    "energy": 19,
+    "stress": 15,
+    "sustainable": false,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "testEvidence",
+      "containedData",
+      "independentTrial",
+      "userEvidence"
+    ],
+    "history": 94
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

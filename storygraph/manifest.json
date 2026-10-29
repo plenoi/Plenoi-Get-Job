@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "sourceHash": "cd239793af6d5f07badaaf2a53547687e0c4a15ec495816d38d61f6998ef798d",
+  "sourceHash": "926167fbdebe6e26bb9632a92754cc0d3843dc291ab926af55771125b0b22e0d",
   "nodes": 161000,
   "storyNodes": 160000,
   "endingLeaves": 1000,
@@ -29,5 +29,5 @@
   "runtimeRules": "../sim-core.js",
   "terminalSelector": "outcome-v2",
   "description": "Explicit compiled story-state DAG, not 161000 independently written scenes. Nodes share authored scenarios; each node has its own state/scene descriptor and four causal transitions. Full numeric history is evaluated by terminal guards.",
-  "bytes": 19093169
+  "bytes": 19166706
 }

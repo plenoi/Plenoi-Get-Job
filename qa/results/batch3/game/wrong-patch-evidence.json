@@ -1,0 +1,55 @@
+{
+  "method": "Independent visible-code evaluation; no answer-key lookup",
+  "seed": 3,
+  "expected": 568,
+  "chosen": "price + qty",
+  "calculatedOutput": 79,
+  "feedback": "พี่เมย์\n\nยังมีกรณีขอบเขตที่ต้องแก้ก่อนส่ง",
+  "explanation": "หลักการจากงานนี้\n\nยอดรวม = ราคาต่อชิ้น × จำนวน เครื่องหมาย + บวกตัวเลขเข้าด้วยกัน ไม่ได้คูณจำนวนสินค้า",
+  "deltas": "คุณภาพงาน +1 → 51\nพลังงาน -2 → 78\nMotivation +1 → 46\nExpertise +3 → 33\nProblem Solving +2 → 32\nLogical Thinking +2 → 32\nHappiness +1 → 66\nTired +2 → 22\nHungry +1 → 21\nThirsty +2 → 17\nBored -2 → 13\nSleepy +1 → 21",
+  "state": {
+    "quality": 51,
+    "history": {
+      "stage": 1,
+      "source": "งานบนหน้าจอ",
+      "delta": {
+        "stats": {
+          "quality": 1,
+          "energy": -2
+        },
+        "relations": {
+          "mentor": 0
+        },
+        "assessment": {
+          "motivation": 1,
+          "expertise": 3,
+          "problemSolving": 2,
+          "systematicThinking": 2
+        },
+        "general": {
+          "happiness": 1,
+          "tired": 2,
+          "hungry": 1,
+          "thirsty": 2,
+          "bored": -2,
+          "sleepy": 1
+        },
+        "bonds": {
+          "mentor": {
+            "trust": 0,
+            "friendly": 0,
+            "respect": 0,
+            "affection": 0,
+            "tension": 0
+          }
+        }
+      },
+      "flag": "",
+      "node": 2120,
+      "choice": 1,
+      "rank": 2,
+      "next": 4120,
+      "fatigued": false
+    }
+  }
+}
