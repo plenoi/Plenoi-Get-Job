@@ -1,0 +1,244 @@
+{
+  "buildHash": "abd5281b2efa4c18ccaa51c4781dd5183eb194d66bb553ffb0af6b1f2ea03a1d",
+  "pageErrors": [],
+  "gates": {
+    "creativeTrial": {
+      "before": {
+        "assessment": {
+          "planning": 30,
+          "motivation": 45,
+          "expertise": 30,
+          "problemSolving": 30,
+          "qualityWork": 30,
+          "creativeThinking": 60,
+          "teamwork": 30,
+          "integrity": 60,
+          "punctuality": 50,
+          "adaptation": 55,
+          "manner": 55,
+          "communication": 30,
+          "assertiveness": 30,
+          "systematicThinking": 30
+        }
+      },
+      "scene": {
+        "title": "เปิดทางให้ต้นแบบของคุณ",
+        "text": "ทีมให้คุณลองต้นแบบทางเลือกหนึ่งแบบ โดยต้องพิสูจน์ว่ามันช่วยผู้ใช้จริง",
+        "choices": [
+          {
+            "i": 0,
+            "t": "A\nให้ผู้ใช้ลองงานหนึ่งชิ้นแล้วสังเกตขั้นที่ติด"
+          },
+          {
+            "i": 2,
+            "t": "B\nเปลี่ยนหน้าตาทั้งหมดตามความรู้สึก"
+          },
+          {
+            "i": 1,
+            "t": "C\nเทียบข้อมูลการใช้งานก่อนถามเพิ่ม"
+          },
+          {
+            "i": 3,
+            "t": "D\nบอกว่าทำตามเอกสารเดิมครบแล้ว"
+          }
+        ]
+      },
+      "after": {
+        "assessment": {
+          "planning": 30,
+          "motivation": 46,
+          "expertise": 32,
+          "problemSolving": 31,
+          "qualityWork": 31,
+          "creativeThinking": 63,
+          "teamwork": 31,
+          "integrity": 60,
+          "punctuality": 50,
+          "adaptation": 57,
+          "manner": 55,
+          "communication": 31,
+          "assertiveness": 30,
+          "systematicThinking": 30
+        },
+        "delta": "คุณภาพงาน +4 → 54\nพลังงาน -3 → 77\nWorking Quality +1 → 31\nProblem Solving +1 → 31\nCommunication +1 → 31\nTeam Work +1 → 31\nMotivation +1 → 46\nCreativity +3 → 63\nExpertise +2 → 32\nAdjustment +2 → 57\nHappiness +1 → 66\nTired +3 → 23\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nฟ้า +1 → 51\nพี่เมย์ +1 → 51\nฟ้า · ความไว้ใจ +1 → 51\nฟ้า · ความเป็นมิตร +1 → 51\nฟ้า · ความเคารพ +1 → 51\nฟ้า · ความผูกพัน +1 → 26\nฟ้า · ความตึงเครียด -1 → 9\nพี่เมย์ · ความไว้ใจ +1 → 51\nพี่เมย์ · ความเป็นมิตร +1 → 51\nพี่เมย์ · ความเคารพ +1 → 51\nพี่เมย์ · ความผูกพัน +1 → 26\nพี่เมย์ · ความตึงเครียด -1 → 9",
+        "facts": [
+          "userEvidence"
+        ]
+      }
+    },
+    "advancedTask": {
+      "before": {
+        "assessment": {
+          "planning": 30,
+          "motivation": 45,
+          "expertise": 70,
+          "problemSolving": 70,
+          "qualityWork": 60,
+          "creativeThinking": 30,
+          "teamwork": 30,
+          "integrity": 60,
+          "punctuality": 50,
+          "adaptation": 30,
+          "manner": 55,
+          "communication": 30,
+          "assertiveness": 30,
+          "systematicThinking": 30
+        },
+        "family": "dev"
+      },
+      "scene": {
+        "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+        "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+        "choices": [
+          {
+            "i": 3,
+            "t": "A\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก"
+          },
+          {
+            "i": 0,
+            "t": "B\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน"
+          },
+          {
+            "i": 2,
+            "t": "C\nขัดรายละเอียดให้สวยขึ้นก่อน"
+          },
+          {
+            "i": 1,
+            "t": "D\nขอ feedback จากผู้ใช้หนึ่งงานหลัก"
+          }
+        ]
+      },
+      "after": {
+        "assessment": {
+          "planning": 30,
+          "motivation": 46,
+          "expertise": 73,
+          "problemSolving": 72,
+          "qualityWork": 61,
+          "creativeThinking": 30,
+          "teamwork": 31,
+          "integrity": 60,
+          "punctuality": 50,
+          "adaptation": 30,
+          "manner": 55,
+          "communication": 31,
+          "assertiveness": 30,
+          "systematicThinking": 32
+        },
+        "delta": "คุณภาพงาน +4 → 54\nพลังงาน -3 → 77\nWorking Quality +1 → 61\nProblem Solving +2 → 72\nCommunication +1 → 31\nTeam Work +1 → 31\nMotivation +1 → 46\nExpertise +3 → 73\nLogical Thinking +2 → 32\nHappiness +1 → 66\nTired +3 → 23\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่เมย์ +2 → 52\nพี่เมย์ · ความไว้ใจ +2 → 52\nพี่เมย์ · ความเป็นมิตร +2 → 52\nพี่เมย์ · ความเคารพ +1 → 51\nพี่เมย์ · ความผูกพัน +1 → 26\nพี่เมย์ · ความตึงเครียด -2 → 8",
+        "facts": [
+          "testEvidence"
+        ]
+      }
+    },
+    "facilitate": {
+      "before": {
+        "assessment": {
+          "planning": 30,
+          "motivation": 45,
+          "expertise": 30,
+          "problemSolving": 30,
+          "qualityWork": 30,
+          "creativeThinking": 30,
+          "teamwork": 30,
+          "integrity": 60,
+          "punctuality": 50,
+          "adaptation": 30,
+          "manner": 55,
+          "communication": 70,
+          "assertiveness": 70,
+          "systematicThinking": 30
+        }
+      },
+      "scene": {
+        "title": "คุณเป็นคนช่วยให้สองฝ่ายคุยกัน",
+        "text": "เพื่อนกับหัวหน้าตีความเกณฑ์งานต่างกัน ทีมขอให้คุณช่วยถามจนเห็นข้อสรุปร่วม",
+        "choices": [
+          {
+            "i": 3,
+            "t": "A\nเถียงต่อหน้าทีมว่าของเดิมดีกว่า"
+          },
+          {
+            "i": 1,
+            "t": "B\nทำต้นแบบเล็กมาเทียบให้เห็นผล"
+          },
+          {
+            "i": 0,
+            "t": "C\nขอเกณฑ์และเทียบข้อดีเสียของสองแบบ"
+          },
+          {
+            "i": 2,
+            "t": "D\nแก้ทั้งหมดโดยไม่ถาม"
+          }
+        ]
+      },
+      "after": {
+        "assessment": {
+          "planning": 30,
+          "motivation": 46,
+          "expertise": 30,
+          "problemSolving": 31,
+          "qualityWork": 31,
+          "creativeThinking": 30,
+          "teamwork": 31,
+          "integrity": 60,
+          "punctuality": 50,
+          "adaptation": 30,
+          "manner": 57,
+          "communication": 73,
+          "assertiveness": 72,
+          "systematicThinking": 30
+        },
+        "delta": "คุณภาพงาน +4 → 54\nพลังงาน -3 → 77\nWorking Quality +1 → 31\nProblem Solving +1 → 31\nCommunication +3 → 73\nTeam Work +1 → 31\nMotivation +1 → 46\nManner +2 → 57\nAssertiveness +2 → 72\nHappiness +1 → 66\nTired +3 → 23\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่ต้น +3 → 53\nพี่ต้น · ความไว้ใจ +3 → 53\nพี่ต้น · ความเป็นมิตร +2 → 52\nพี่ต้น · ความเคารพ +2 → 52\nพี่ต้น · ความผูกพัน +1 → 26\nพี่ต้น · ความตึงเครียด -3 → 7",
+        "facts": []
+      }
+    }
+  },
+  "deadline": {
+    "seed": 1906,
+    "scene": {
+      "stage": 2,
+      "title": "สองงานแรกชนกัน",
+      "choices": [
+        {
+          "i": "2",
+          "t": "A\nข้ามการตรวจ ขั้นตอนเริ่มใช้งาน เพื่อให้ส่งทัน"
+        },
+        {
+          "i": "1",
+          "t": "B\nส่งตัวอย่างสำหรับ ขั้นตอนเริ่มใช้งาน ให้ทีมทดลองก่อน"
+        },
+        {
+          "i": "0",
+          "t": "C\nยืนยันส่วนที่อีกทีมต้องใช้ แล้วตกลงเลื่อนงานที่เหลือ"
+        },
+        {
+          "i": "3",
+          "t": "D\nปิดงานเดิมที่ง่ายกว่า แล้วค่อยแจ้งอีกทีม"
+        }
+      ]
+    },
+    "facts": [
+      "untestedDelivery"
+    ],
+    "followup": "CAMT WIL CENTER · เดือน 1\nติดตามเหตุที่ยังค้าง · งานไม่ผ่านเกณฑ์เมื่อตรวจภายหลัง\n😐 พี่เมย์ · 50\n😠 พี่ต้น · 47\n😐 ฟ้า · 50\n😐 พี่ลิน · 50\nก้าวแรกและสิทธิ์ระบบ\nทุกการเลือกมีผลต่อเรื่องราว\nพี่เมย์ · ทีมจำลอง\n\nภายหลัง เมื่อนำงานไปตรวจในสถานการณ์อื่น ทีมพบว่าผลยังไม่ตรงเงื่อนไขที่ตกลงไว้ จึงชะลอการนำไปใช้และขอตรวจสาเหตุจากหลักฐาน ต่อเนื่องจาก: สองงานแรกชนกัน · ข้ามการตรวจ ขั้นตอนเริ่มใช้งาน เพื่อให้ส่งทัน\n\nA\nขอเพื่อนช่วยทบทวนสาเหตุและแจ้งเวลตรวจ\nB\nแก้เฉพาะตัวอย่างที่พบ\nC\nเดินหน้าต่อโดยยังไม่ทบทวนกรณีที่พบ\nD\nทำซ้ำกรณีที่พบ แก้สาเหตุ และเพิ่มวิธีตรวจซ้ำ\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n63/10"
+  },
+  "offerEnding": {
+    "result": {
+      "offer": true,
+      "tier": 4,
+      "salaryTHBPerMonth": 46742,
+      "title": "ได้รับข้อเสนอทำงานต่อ"
+    },
+    "text": "CAMT WIL CENTER · เดือน 10\nได้รับข้อเสนอทำงานต่อ\n🙂 พี่เมย์ · 90\n🙂 พี่ต้น · 90\n🙂 ฟ้า · 90\n🙂 พี่ลิน · 90\nบทสรุปของเส้นทางนี้\nทุกการเลือกมีผลต่อเรื่องราว\nบทสรุปของเส้นทางนี้\n\nการเลือกเล็ก ๆ ที่ทำซ้ำกลายเป็นภาพจำของทีม\n\nProgramming (SSO Interface) · บริษัท เอสซีจี เคมิคอลส์ จำกัด (กรุงเทพฯ) (บริษัทในเครือ SCG)\n\nบทสรุปทบทวนข้อจำกัดที่คุณได้พบจากงาน\n\nพี่ต้นสรุปผลต่อทีมและขอบเขตงานที่ต้องดูแลต่อ\n\nคุณเลือกเก็บบทเรียนเป็นแฟ้มผลงานสำหรับเส้นทางถัดไป\n\nบริษัทจำลองยื่นข้อเสนอทำงานต่อ เงินเดือนจำลอง 46,742 บาท/เดือน · เป็นตัวเลขในเกมเท่านั้น\n\nคุณจบเส้นทางโดยมีแรงดูแลตัวเองและส่งต่องานได้\n\nProposal 100 · สอบจบ 100 · นิเทศ 4 ครั้ง\n\nคุณผ่านการตัดสินใจในงาน 80 เหตุการณ์ และบทสนทนา/การฝึกอีก 14 ครั้ง\n\nสิ่งที่ทีมจำได้\n\nทีมจำรูปแบบการทำงานที่คุณทำซ้ำอย่างสม่ำเสมอ\n\nย้อนดูการเลือกและผลที่สะสม\nเริ่มเส้นทางใหม่\nพิมพ์บทสรุป\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n65/100\nTired · ความเหนื่อย\n20/100\nHungry · ความหิว\n20/100\nThirsty · ความกระหาย\n15/100\nBored · ความเบื่อ\n15/100\nSleepy · ความง่วง\n20/100\nค่าประเมินการฝึกงาน · 14 ด้าน\nPlanning · วางแผน\n90/100\nMotivation · ความมุ่งมั่น\n90/100\nExpertise · ความเชี่ยวชาญ\n90/100\nProblem Solving · แก้ปัญหา\n90/100\nWorking Quality · คุณภาพงาน\n90/100\nCreativity · ความคิดสร้างสรรค์\n90/100\nTeam Work · ทำงานเป็นทีม\n90/100\nMorality · จริยธรรม\n90/100\nPunctual · ตรงเวลา\n90/100\nAdjustment · ปรับตัว\n90/100\nManner · มารยาท\n90/100\nCommunication · สื่อสาร\n90/100\nAssertiveness · กล้าแสดงออก\n90/100\nLogical Thinking · คิดเป็นเหตุผล\n90/100\nคนในสำนักงาน\n🙂 พี่เมย์ · Relationship 90\n🙂 พี่ต้น · Relationship 90\n🙂 ฟ้า · Relationship 90\n🙂 พี่ลิน · Relationship 90\n\nความผูกพันคือความใส่ใจที่สะสม ไม่ได้เปลี่ยนเป็นคู่รักโดยอัตโนมัติ"
+  },
+  "noOfferEnding": {
+    "result": {
+      "offer": false,
+      "tier": 3,
+      "salaryTHBPerMonth": null,
+      "title": "จบอย่างโดดเด่น แต่ยังไม่ได้รับข้อเสนอทำงาน"
+    },
+    "text": "CAMT WIL CENTER · เดือน 10\nจบอย่างโดดเด่น แต่ยังไม่ได้รับข้อเสนอทำงาน\n🙂 พี่เมย์ · 90\n🙂 พี่ต้น · 90\n🙂 ฟ้า · 90\n🙂 พี่ลิน · 90\nบทสรุปของเส้นทางนี้\nทุกการเลือกมีผลต่อเรื่องราว\nบทสรุปของเส้นทางนี้\n\nการเลือกเล็ก ๆ ที่ทำซ้ำกลายเป็นภาพจำของทีม\n\nProgramming (SSO Interface) · บริษัท เอสซีจี เคมิคอลส์ จำกัด (กรุงเทพฯ) (บริษัทในเครือ SCG)\n\nแฟ้มผลงานเก็บเฉพาะสิ่งที่ลงมือทำและหลักฐานที่มี\n\nพี่ต้นสรุปผลต่อทีมและขอบเขตงานที่ต้องดูแลต่อ\n\nคุณเขียนแผนฝึกต่อพร้อมเป้าหมายที่ตรวจได้\n\nผลลัพธ์สะท้อนทั้งผลงานที่ส่งได้และการทำงานร่วมกับทีม\n\nคุณจบเส้นทางโดยมีแรงดูแลตัวเองและส่งต่องานได้\n\nProposal 100 · สอบจบ 100 · นิเทศ 4 ครั้ง\n\nคุณผ่านการตัดสินใจในงาน 80 เหตุการณ์ และบทสนทนา/การฝึกอีก 14 ครั้ง\n\nสิ่งที่ทีมจำได้\n\nทีมจำรูปแบบการทำงานที่คุณทำซ้ำอย่างสม่ำเสมอ\n\nย้อนดูการเลือกและผลที่สะสม\nเริ่มเส้นทางใหม่\nพิมพ์บทสรุป\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n65/100\nTired · ความเหนื่อย\n20/100\nHungry · ความหิว\n20/100\nThirsty · ความกระหาย\n15/100\nBored · ความเบื่อ\n15/100\nSleepy · ความง่วง\n20/100\nค่าประเมินการฝึกงาน · 14 ด้าน\nPlanning · วางแผน\n90/100\nMotivation · ความมุ่งมั่น\n90/100\nExpertise · ความเชี่ยวชาญ\n90/100\nProblem Solving · แก้ปัญหา\n90/100\nWorking Quality · คุณภาพงาน\n90/100\nCreativity · ความคิดสร้างสรรค์\n90/100\nTeam Work · ทำงานเป็นทีม\n90/100\nMorality · จริยธรรม\n90/100\nPunctual · ตรงเวลา\n90/100\nAdjustment · ปรับตัว\n90/100\nManner · มารยาท\n90/100\nCommunication · สื่อสาร\n90/100\nAssertiveness · กล้าแสดงออก\n90/100\nLogical Thinking · คิดเป็นเหตุผล\n90/100\nคนในสำนักงาน\n🙂 พี่เมย์ · Relationship 90\n🙂 พี่ต้น · Relationship 90\n🙂 ฟ้า · Relationship 90\n🙂 พี่ลิน · Relationship 90\n\nความผูกพันคือความใส่ใจที่สะสม ไม่ได้เปลี่ยนเป็นคู่รักโดยอัตโนมัติ"
+  }
+}

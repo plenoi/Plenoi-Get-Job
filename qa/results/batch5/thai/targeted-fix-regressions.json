@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "renderedFollowup": {
+    "laterDiscovery": true,
+    "neutralWording": true
+  },
+  "renderedOffer": {
+    "salaryTHBPerMonth": 48068,
+    "explicitlySimulated": true,
+    "wealthBefore": 1500,
+    "wealthAfter": 1500
+  },
+  "renderedNoOfferHasNoSalary": true,
+  "pageErrors": []
+}
