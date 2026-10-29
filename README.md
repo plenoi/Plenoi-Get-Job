@@ -44,7 +44,7 @@ Browser QAใช้ Playwright กับ Microsoft Edge ตาม pathในส�
 ## เผยแพร่และดูแล
 
 URLเซิร์ฟเวอร์: https://89.45.45.73/Plenoi-Get-Job/
-ซอร์สในเครื่อง: `C:\Plenoi-Get-Job` · private GitHub: `https://github.com/plenoi/Plenoi-Get-Job`
+ซอร์สในเครื่อง: `C:\Plenoi-Get-Job` · private GitHub: `https://github.com/plenoi/Plenoi-Get-Job` (source และ QA docs push แล้วถึง `5180a2c`)
 
 คำสั่งดูแลจาก `/opt/ai-app/plenoi-get-job` ใช้เฉพาะ Compose service `web` ของโครงการนี้:
 
