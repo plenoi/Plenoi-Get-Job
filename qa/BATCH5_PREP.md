@@ -1,6 +1,6 @@
 # Batch 5 fix preparation (no source changes)
 
-Frozen review product hash: `abd5281b2efa4c18ccaa51c4781dd5183eb194d66bb553ffb0af6b1f2ea03a1d`. The reviewer evidence identifies one confirmed actionable issue so far. The coordinator has not authorized product or test edits yet; wait for `STARTFIX` after the student reviewer completes.
+Frozen review product hash: `abd5281b2efa4c18ccaa51c4781dd5183eb194d66bb553ffb0af6b1f2ea03a1d`. The reviewer evidence identifies one confirmed actionable issue so far. This was the pre-implementation note. The coordinator authorized the fix after all four reviews completed; implementation and regression results are in [BATCH5_FIXES.md](BATCH5_FIXES.md).
 
 ## Confirmed finding
 
@@ -25,4 +25,5 @@ Update the existing `qa/batch4-fix-regressions.js` assertions that currently exp
 
 Run focused regression and full requested checks once after product changes. Bump the main-page and story-map core query strings to v7 before the next frozen review. If node payloads are unchanged, verify the graph source hash and packaged graph bytes rather than rebuilding the graph archive.
 
-Do not claim Batch 5 clean before all four fresh reviewer rounds finish on the eventual unchanged fix build.
+Batch 5 was not clean. Batch 6 fresh independent review is pending.
+

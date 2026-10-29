@@ -977,7 +977,15 @@
               0
             ],
             "chain": null,
-            "flag": "testEvidence"
+            "flag": "testEvidence",
+            "assessment": {
+              "qualityWork": 2,
+              "problemSolving": 2,
+              "systematicThinking": 2,
+              "planning": 1,
+              "teamwork": 1,
+              "communication": 1
+            }
           },
           "rank": 3
         },
@@ -998,7 +1006,13 @@
               0
             ],
             "chain": null,
-            "flag": "userEvidence"
+            "flag": "userEvidence",
+            "assessment": {
+              "qualityWork": 2,
+              "problemSolving": 1,
+              "teamwork": 2,
+              "communication": 1
+            }
           },
           "rank": 3
         },
@@ -1019,7 +1033,11 @@
               1
             ],
             "chain": null,
-            "flag": ""
+            "flag": "",
+            "assessment": {
+              "qualityWork": 1,
+              "problemSolving": 0
+            }
           },
           "rank": 1
         },
@@ -1039,7 +1057,15 @@
               1
             ],
             "chain": 1,
-            "flag": "untestedWork"
+            "flag": "untestedWork",
+            "assessment": {
+              "qualityWork": -2,
+              "problemSolving": -1,
+              "systematicThinking": -2,
+              "planning": -1,
+              "teamwork": -1,
+              "communication": -1
+            }
           },
           "rank": 0
         }

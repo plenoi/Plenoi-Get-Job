@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "genericAdvancedTask": {
+    "noSpecialtyExpertiseAcrossFamilies": true,
+    "allChoicesCovered": true,
+    "sharedLearningUnchanged": true
+  },
+  "visibleSqlTaskStillAwardsExpertise": true,
+  "renderedFollowup": {
+    "laterDiscovery": true,
+    "neutralWording": true
+  },
+  "renderedOffer": {
+    "salaryTHBPerMonth": 48068,
+    "explicitlySimulated": true,
+    "wealthBefore": 1500,
+    "wealthAfter": 1500
+  },
+  "renderedNoOfferHasNoSalary": true,
+  "pageErrors": []
+}
