@@ -1,0 +1,135 @@
+{
+  "buildHash": "2a66d598add04bcd6459dba7d923b7d5caf02f0aae7451dbd30f61c9681ebd04",
+  "method": "Targeted actual-browser fixture. Each generic SQL-family advancedTask action is selected by visible shuffled position (not internal option index); visible button text, assessment deltas, and feedback are captured. A generated SQL technical question is then answered correctly through the runner key to verify actual artifact credit. Not a human ability test.",
+  "advancedTaskChoices": [
+    {
+      "visiblePosition": 1,
+      "selectedVisibleText": "A\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "internalSource": 1,
+      "allVisibleChoices": [
+        "Aขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+        "Bส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+        "Cขัดรายละเอียดให้สวยขึ้นก่อน",
+        "Dทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน"
+      ],
+      "assessmentDeltas": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "expertiseBeforeAfter": [
+        70,
+        70
+      ],
+      "creativityBeforeAfter": [
+        30,
+        30
+      ],
+      "feedbackText": "CAMT WIL CENTER · เดือน 3\nทีมตอบสนองต่อสิ่งที่คุณเลือก\n😐 พี่เมย์ · 50\n😐 พี่ต้น · 50\n🙂 ฟ้า · 52\n😐 พี่ลิน · 50\nคุณภาพงาน +3 → 53\nพลังงาน -2 → 78\nWorking Quality +2 → 67\nProblem Solving +1 → 66\nCommunication +1 → 31\nTeam Work +2 → 32\nHappiness +1 → 66\nTired +2 → 22\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nฟ้า +2 → 52\nฟ้า · ความไว้ใจ +2 → 52\nฟ้า · ความเป็นมิตร +2 → 52\nฟ้า · ความเคารพ +1 → 51\nฟ้า · ความผูกพัน +1 → 26\nฟ้า · ความตึงเครียด -2 → 8\nฟ้า\n\nคุณเห็นจุดที่ผู้ใช้ติดซึ่งทีมมองข้าม\n\nฟ้า\nทุกการเลือกมีผลต่อเรื่องราว\nไปต่อ\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n66/100\nTired · ความเหนื่อย\n22/100\nHungry · ความหิว\n21/100\nThirsty · ความกระหาย\n17/100\nBored · ความเบื่อ\n16/100\nSl"
+    },
+    {
+      "visiblePosition": 2,
+      "selectedVisibleText": "B\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "internalSource": 3,
+      "allVisibleChoices": [
+        "Aขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+        "Bส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+        "Cขัดรายละเอียดให้สวยขึ้นก่อน",
+        "Dทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน"
+      ],
+      "assessmentDeltas": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "expertiseBeforeAfter": [
+        70,
+        70
+      ],
+      "creativityBeforeAfter": [
+        30,
+        30
+      ],
+      "feedbackText": "CAMT WIL CENTER · เดือน 3\nผลกระทบเริ่มตามมา\n😠 พี่เมย์ · 48\n😐 พี่ต้น · 50\n😐 ฟ้า · 50\n😐 พี่ลิน · 50\nคุณภาพงาน -3 → 47\nWorking Quality -2 → 63\nProblem Solving -1 → 64\nCommunication -1 → 29\nTeam Work -1 → 29\nLogical Thinking -2 → 28\nPlanning -1 → 29\nHappiness -2 → 63\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่เมย์ -2 → 48\nพี่เมย์ · ความไว้ใจ -2 → 48\nพี่เมย์ · ความเป็นมิตร -2 → 48\nพี่เมย์ · ความเคารพ -1 → 49\nพี่เมย์ · ความผูกพัน -1 → 24\nพี่เมย์ · ความตึงเครียด +2 → 12\nพี่เมย์\n\nข้อผิดพลาดที่ยังไม่ถูกตรวจไม่เท่ากับไม่มีข้อผิดพลาด\n\nพี่เมย์\nทุกการเลือกมีผลต่อเรื่องราว\nไปต่อ\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n63/100\nTired · ความเหนื่อย\n20/100\nHungry · ความหิว\n21/100\nThirst"
+    },
+    {
+      "visiblePosition": 3,
+      "selectedVisibleText": "C\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "internalSource": 2,
+      "allVisibleChoices": [
+        "Aขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+        "Bส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+        "Cขัดรายละเอียดให้สวยขึ้นก่อน",
+        "Dทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน"
+      ],
+      "assessmentDeltas": {
+        "qualityWork": 1
+      },
+      "expertiseBeforeAfter": [
+        70,
+        70
+      ],
+      "creativityBeforeAfter": [
+        30,
+        30
+      ],
+      "feedbackText": "CAMT WIL CENTER · เดือน 3\nผลกระทบเริ่มตามมา\n😐 พี่เมย์ · 50\n😐 พี่ต้น · 50\n😐 ฟ้า · 50\n😐 พี่ลิน · 50\nคุณภาพงาน +1 → 51\nพลังงาน -4 → 76\nWorking Quality +1 → 66\nHappiness -2 → 63\nTired +4 → 24\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่เมย์\n\nภาพรวมดีขึ้น แต่จุดเสี่ยงเดิมยังไม่ได้ทดสอบ\n\nพี่เมย์\nทุกการเลือกมีผลต่อเรื่องราว\nไปต่อ\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n63/100\nTired · ความเหนื่อย\n24/100\nHungry · ความหิว\n21/100\nThirsty · ความกระหาย\n17/100\nBored · ความเบื่อ\n16/100\nSleepy · ความง่วง\n21/100\nค่าประเมินการฝึกงาน · 14 ด้าน\nPlanning · วางแผน\n30/100\nMotivation · ความมุ่งมั่น\n45/100\nExpertise · ความเชี่ยวชาญ\n70/100\nProblem Solving · แก้ปัญหา\n65/100\nWorking Quality · คุณ"
+    },
+    {
+      "visiblePosition": 4,
+      "selectedVisibleText": "D\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "internalSource": 0,
+      "allVisibleChoices": [
+        "Aขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+        "Bส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+        "Cขัดรายละเอียดให้สวยขึ้นก่อน",
+        "Dทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน"
+      ],
+      "assessmentDeltas": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "expertiseBeforeAfter": [
+        70,
+        70
+      ],
+      "creativityBeforeAfter": [
+        30,
+        30
+      ],
+      "feedbackText": "CAMT WIL CENTER · เดือน 3\nทีมตอบสนองต่อสิ่งที่คุณเลือก\n🙂 พี่เมย์ · 52\n😐 พี่ต้น · 50\n😐 ฟ้า · 50\n😐 พี่ลิน · 50\nคุณภาพงาน +4 → 54\nพลังงาน -3 → 77\nWorking Quality +2 → 67\nProblem Solving +2 → 67\nCommunication +1 → 31\nTeam Work +1 → 31\nLogical Thinking +2 → 32\nPlanning +1 → 31\nHappiness +1 → 66\nTired +3 → 23\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่เมย์ +2 → 52\nพี่เมย์ · ความไว้ใจ +2 → 52\nพี่เมย์ · ความเป็นมิตร +2 → 52\nพี่เมย์ · ความเคารพ +1 → 51\nพี่เมย์ · ความผูกพัน +1 → 26\nพี่เมย์ · ความตึงเครียด -2 → 8\nพี่เมย์\n\nคุณพบข้อผิดพลาดก่อนส่ง และบันทึกวิธีตรวจซ้ำไว้\n\nพี่เมย์\nทุกการเลือกมีผลต่อเรื่องราว\nไปต่อ\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n66/100\nTired · ความเหนื่อย\n23"
+    }
+  ],
+  "sqlArtifact": {
+    "question": {
+      "domain": "sql",
+      "title": "ลูกค้าที่สั่งซื้อมากกว่าเกณฑ์",
+      "prompt": "ต้องการลูกค้าที่มีจำนวนคำสั่งซื้อมากกว่าเกณฑ์ ควรกรองตรงไหน?",
+      "code": "SELECT customer_id, COUNT(*) AS n\nFROM orders\nGROUP BY customer_id\n-- ต้องการ n > 6",
+      "choices": [
+        "HAVING COUNT(*) > 6",
+        "WHERE COUNT(*) > 6",
+        "ORDER BY COUNT(*) > 6",
+        "LIMIT COUNT(*) > 6"
+      ],
+      "answer": 0
+    },
+    "visibleChoices": [
+      "ALIMIT COUNT(*) > 6",
+      "BWHERE COUNT(*) > 6",
+      "CORDER BY COUNT(*) > 6",
+      "DHAVING COUNT(*) > 6"
+    ],
+    "expertiseBefore": 30,
+    "expertiseAfter": 33
+  },
+  "pageErrors": []
+}

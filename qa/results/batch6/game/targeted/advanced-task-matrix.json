@@ -1,0 +1,619 @@
+{
+  "buildHash": "2a66d598add04bcd6459dba7d923b7d5caf02f0aae7451dbd30f61c9681ebd04",
+  "families": [
+    "dev",
+    "database",
+    "design",
+    "test",
+    "analyst",
+    "marketing",
+    "support",
+    "business"
+  ],
+  "choiceMatrix": [
+    {
+      "family": "dev",
+      "choice": 0,
+      "visibleChoice": "B\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "dev",
+      "choice": 1,
+      "visibleChoice": "A\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "dev",
+      "choice": 2,
+      "visibleChoice": "C\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "dev",
+      "choice": 3,
+      "visibleChoice": "A\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "database",
+      "choice": 0,
+      "visibleChoice": "B\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "database",
+      "choice": 1,
+      "visibleChoice": "D\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "database",
+      "choice": 2,
+      "visibleChoice": "D\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "database",
+      "choice": 3,
+      "visibleChoice": "A\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "design",
+      "choice": 0,
+      "visibleChoice": "D\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "design",
+      "choice": 1,
+      "visibleChoice": "D\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "design",
+      "choice": 2,
+      "visibleChoice": "C\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "design",
+      "choice": 3,
+      "visibleChoice": "B\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "test",
+      "choice": 0,
+      "visibleChoice": "A\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "test",
+      "choice": 1,
+      "visibleChoice": "D\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "test",
+      "choice": 2,
+      "visibleChoice": "A\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "test",
+      "choice": 3,
+      "visibleChoice": "D\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "analyst",
+      "choice": 0,
+      "visibleChoice": "C\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "analyst",
+      "choice": 1,
+      "visibleChoice": "B\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "analyst",
+      "choice": 2,
+      "visibleChoice": "B\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "analyst",
+      "choice": 3,
+      "visibleChoice": "B\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "marketing",
+      "choice": 0,
+      "visibleChoice": "B\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "marketing",
+      "choice": 1,
+      "visibleChoice": "D\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "marketing",
+      "choice": 2,
+      "visibleChoice": "C\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "marketing",
+      "choice": 3,
+      "visibleChoice": "B\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "support",
+      "choice": 0,
+      "visibleChoice": "B\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "support",
+      "choice": 1,
+      "visibleChoice": "C\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "support",
+      "choice": 2,
+      "visibleChoice": "A\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "support",
+      "choice": 3,
+      "visibleChoice": "B\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "business",
+      "choice": 0,
+      "visibleChoice": "B\nทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": 1,
+        "problemSolving": 2,
+        "qualityWork": 2,
+        "teamwork": 1,
+        "communication": 1,
+        "systematicThinking": 2
+      },
+      "qualityDelta": 4,
+      "storyFacts": [
+        "testEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "business",
+      "choice": 1,
+      "visibleChoice": "D\nขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "problemSolving": 1,
+        "qualityWork": 2,
+        "teamwork": 2,
+        "communication": 1
+      },
+      "qualityDelta": 3,
+      "storyFacts": [
+        "userEvidence"
+      ],
+      "feedback": ""
+    },
+    {
+      "family": "business",
+      "choice": 2,
+      "visibleChoice": "C\nขัดรายละเอียดให้สวยขึ้นก่อน",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "qualityWork": 1
+      },
+      "qualityDelta": 1,
+      "storyFacts": [],
+      "feedback": ""
+    },
+    {
+      "family": "business",
+      "choice": 3,
+      "visibleChoice": "A\nส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "assessmentDelta": {
+        "planning": -1,
+        "problemSolving": -1,
+        "qualityWork": -2,
+        "teamwork": -1,
+        "communication": -1,
+        "systematicThinking": -2
+      },
+      "qualityDelta": -3,
+      "storyFacts": [
+        "untestedWork"
+      ],
+      "feedback": ""
+    }
+  ],
+  "sharedTemplateUnchanged": true,
+  "sqlKnowledge": {
+    "seed": 2,
+    "title": "หาคำสั่งซื้อที่ยังไม่จ่าย",
+    "prompt": "เลือกเงื่อนไข SQL ที่ค้นหา paid_at ซึ่งไม่มีค่า",
+    "code": "SELECT id FROM orders\nWHERE paid_at = NULL;\n-- orders: (1, NULL), (2, '2026-10-01')",
+    "answer": 0,
+    "options": [
+      "WHERE paid_at IS NULL",
+      "WHERE paid_at = NULL",
+      "WHERE paid_at = 0",
+      "WHERE paid_at = 'NULL'"
+    ],
+    "assessmentBefore": {
+      "planning": 30,
+      "motivation": 45,
+      "expertise": 30,
+      "problemSolving": 30,
+      "qualityWork": 30,
+      "creativeThinking": 30,
+      "teamwork": 30,
+      "integrity": 60,
+      "punctuality": 50,
+      "adaptation": 30,
+      "manner": 55,
+      "communication": 30,
+      "assertiveness": 30,
+      "systematicThinking": 30
+    },
+    "visibleChoice": "D\nWHERE paid_at IS NULL",
+    "expertiseBefore": 30,
+    "expertiseAfter": 33,
+    "delta": "พลังงาน -1 → 79\nMotivation +1 → 46\nExpertise +3 → 33\nLogical Thinking +2 → 32\nWorking Quality +2 → 32\nHappiness +2 → 67\nTired +1 → 21\nHungry +1 → 21\nThirsty +2 → 17\nBored -3 → 12\nSleepy +1 → 21"
+  },
+  "pageErrors": [],
+  "method": "32 visible-choice browser fixtures with synthetic run-family overrides; one correct SQL choice selected via generated question answer key."
+}

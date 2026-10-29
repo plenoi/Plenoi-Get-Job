@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "gate": "advancedTask",
+  "family": "database",
+  "choices": [
+    {
+      "sourceChoice": 0,
+      "selected": "ทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+      "expertiseDelta": 0,
+      "creativityDelta": 0
+    },
+    {
+      "sourceChoice": 1,
+      "selected": "ขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+      "expertiseDelta": 0,
+      "creativityDelta": 0
+    },
+    {
+      "sourceChoice": 2,
+      "selected": "ขัดรายละเอียดให้สวยขึ้นก่อน",
+      "expertiseDelta": 0,
+      "creativityDelta": 0
+    },
+    {
+      "sourceChoice": 3,
+      "selected": "ส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+      "expertiseDelta": 0,
+      "creativityDelta": 0
+    }
+  ],
+  "templateUnchanged": true,
+  "realSqlTask": {
+    "domain": "sql",
+    "title": "ลูกค้าที่ไม่มีออร์เดอร์หายไป",
+    "prompt": "ต้องการเห็นลูกค้าทุกคน รวมคนที่ยังไม่มีออร์เดอร์",
+    "code": "SELECT c.name, o.id\nFROM customers c\nINNER JOIN orders o ON o.customer_id = c.id;",
+    "expertiseBefore": 30,
+    "expertiseAfter": 33
+  },
+  "choice0Trace": {
+    "selected": "ทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+    "authoredReply": "คุณพบข้อผิดพลาดก่อนส่ง และบันทึกวิธีตรวจซ้ำไว้",
+    "visibleDeltaText": "CAMT WIL CENTER · เดือน 3\nทีมตอบสนองต่อสิ่งที่คุณเลือก\n🙂 พี่เมย์ · 52\n😐 พี่ต้น · 50\n😐 ฟ้า · 50\n😐 พี่ลิน · 50\nคุณภาพงาน +4 → 54\nพลังงาน -3 → 77\nWorking Quality +2 → 67\nProblem Solving +2 → 72\nCommunication +1 → 31\nTeam Work +1 → 31\nLogical Thinking +2 → 32\nPlanning +1 → 31\nHappiness +1 → 66\nTired +3 → 23\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่เมย์ +2 → 52\nพี่เมย์ · ความไว้ใจ +2 → 52\nพี่เมย์ · ความเป็นมิตร +2 → 52\nพี่เมย์ · ความเคารพ +1 → 51\nพี่เมย์ · ความผูกพัน +1 → 26\nพี่เมย์ · ความตึงเครียด -2 → 8\nพี่เมย์\n\nคุณพบข้อผิดพลาดก่อนส่ง และบันทึกวิธีตรวจซ้ำไว้\n\nพี่เมย์\nทุกการเลือกมีผลต่อเรื่องราว\nไปต่อ\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n66/100\nTired · ความเหนื่อย\n23/100\nHungry · ความหิว\n21/100\nThirsty · ความกระหาย\n17/100\nBored · ความเบื่อ\n16/100\nSleepy · ความง่วง\n21/100\nค่าประเมินการฝึกงาน · 14 ด้าน\nPlanning · วางแผน\n31/100\nMotivation · ความมุ่งมั่น\n45/100\nExpertise · ความเชี่ยวชาญ\n70/100\nProblem Solving · แก้ปัญหา\n72/100\nWorking Quality · คุณภาพงาน\n67/100\nCreativity · ความคิดสร้างสรรค์\n30/100\nTeam Work · ทำงานเป็นทีม\n31/100\nMorality · จริยธรรม\n60/100\nPunctual · ตรงเวลา\n50/100\nAdjustment · ปรับตัว\n30/100\nManner · มารยาท\n55/100\nCommunication · สื่อสาร\n31/100\nAssertiveness · กล้าแสดงออก\n30/100\nLogical Thinking · คิดเป็นเหตุผล\n32/100\nคนในสำนักงาน\n🙂 พี่เมย์ · Relationship 52\n😐 พี่ต้น · Relationship 50\n😐 ฟ้า · Relationship 50\n😐 พี่ลิน · Relationship 50\n\nความผูกพันคือความใส่ใจที่สะสม ไม่ได้เปลี่ยนเป็นคู่รักโดยอัตโนมัติ"
+  },
+  "pageErrors": []
+}

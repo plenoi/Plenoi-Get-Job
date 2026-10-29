@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "genericAdvancedTask": {
+    "noSpecialtyExpertiseAcrossFamilies": true,
+    "allChoicesCovered": true,
+    "sharedLearningUnchanged": true,
+    "choice0Text": "ทดสอบจุดเสี่ยง แล้วส่งหลักฐานให้พี่เลี้ยงตรวจ",
+    "choice0Reply": "คุณกับพี่เลี้ยงทบทวนผล แล้วบันทึกวิธีตรวจซ้ำให้ทีมใช้",
+    "allFamiliesAndChoicesChecked": true,
+    "assessmentDeltasUnchanged": true
+  },
+  "visibleSqlTaskStillAwardsExpertise": true,
+  "renderedFollowup": {
+    "laterDiscovery": true,
+    "neutralWording": true
+  },
+  "renderedOffer": {
+    "salaryTHBPerMonth": 48068,
+    "explicitlySimulated": true,
+    "wealthBefore": 1500,
+    "wealthAfter": 1500
+  },
+  "renderedNoOfferHasNoSalary": true,
+  "pageErrors": []
+}

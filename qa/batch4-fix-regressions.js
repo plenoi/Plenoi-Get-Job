@@ -10,6 +10,8 @@ const advancedAssessment=[
   {qualityWork:1,problemSolving:0},
   {qualityWork:-2,problemSolving:-1,systematicThinking:-2,planning:-1,teamwork:-1,communication:-1}
 ];
+const advancedChoice0Text='ทดสอบจุดเสี่ยง แล้วส่งหลักฐานให้พี่เลี้ยงตรวจ';
+const advancedChoice0Reply='คุณกับพี่เลี้ยงทบทวนผล แล้วบันทึกวิธีตรวจซ้ำให้ทีมใช้';
 
 function gatedRun(id, family='dev') {
   const run = C.initial(707, family);
@@ -34,6 +36,12 @@ const originalLearning=JSON.stringify(C.SCENES.learning);
 for(const family of Object.keys(familyDomain)) for(let choice=0;choice<4;choice++) {
   const run=gatedRun('advancedTask',family),scene=C.sceneForRun(C.decode(run.node),run);
   assert.equal(scene.gate,'advancedTask'); assert.equal(scene.domain,undefined,'Generic investigation should not claim a specialty domain');
+  assert.equal(scene.options[0].text,advancedChoice0Text,`${family} must expose the clarified evidence-sharing action`);
+  assert.equal(scene.options[0].reply,advancedChoice0Reply,`${family} must expose the mentor/team review in its reply`);
+  if(choice!==0) for(let index=1;index<4;index++) {
+    assert.equal(scene.options[index].text,C.SCENES.learning.options[index].text,`${family} choice ${index} wording changed outside scope`);
+    assert.equal(scene.options[index].reply,C.SCENES.learning.options[index].reply,`${family} choice ${index} reply changed outside scope`);
+  }
   const before={...run.assessment},result=C.act(run,choice,scene),expected=advancedAssessment[choice];
   for(const key of ['expertise','creativeThinking']) assert.equal(run.assessment[key],before[key],`Generic ${family} action ${choice} awarded specialty ${key}`);
   for(const [key,value] of Object.entries(expected)) assert.equal(run.assessment[key]-before[key],value,`${family} action ${choice} expected ${key} delta ${value}`);
@@ -76,8 +84,8 @@ const lower=C.outcome(offerRun(offerSeed,86)); assert(lower.offer); assert(lower
 assert.notEqual(best.salaryTHBPerMonth,lower.salaryTHBPerMonth,'Salary should reflect performance');
 assert.equal(C.outcome(offerRun(noSlotSeed,95)).salaryTHBPerMonth,null,'Unavailable offer slot must have no salary');
 assert.equal(C.outcome(offerRun(offerSeed,50)).salaryTHBPerMonth,null,'Ineligible run must have no salary');
-for(const file of ['../index.html','../story-map.html']) assert(/sim-core\.js\?v=7/.test(fs.readFileSync(path.join(__dirname,file),'utf8')),`${file} must use core cache v7`);
-console.log(JSON.stringify({passed:true,gateDomains:['creativeTrial:ux','facilitate:communication'],advancedTask:{families:Object.keys(familyDomain).length,choicesEach:4,noSpecialtyExpertise:true,explicitGenericAssessment:true,sqlArtifactExpertisePreserved:true},technicalFollowup:{fact:'untestedDelivery',laterDiscovery:true,domainNeutral:true},tier3Title:true,salary:{offer:true,deterministic:true,integer:true,range:[25000,60000],performanceBased:true,noOffer:null},coreCacheV7:true}));
+for(const file of ['../index.html','../story-map.html']) assert(/sim-core\.js\?v=8/.test(fs.readFileSync(path.join(__dirname,file),'utf8')),`${file} must use core cache v8`);
+console.log(JSON.stringify({passed:true,gateDomains:['creativeTrial:ux','facilitate:communication'],advancedTask:{families:Object.keys(familyDomain).length,choicesEach:4,clarifiedChoice0:true,noSpecialtyExpertise:true,explicitGenericAssessment:true,sqlArtifactExpertisePreserved:true},technicalFollowup:{fact:'untestedDelivery',laterDiscovery:true,domainNeutral:true},tier3Title:true,salary:{offer:true,deterministic:true,integer:true,range:[25000,60000],performanceBased:true,noOffer:null},coreCacheV8:true}));
 
 (async()=>{
   const {chromium}=require('C:/Users/phazn/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
@@ -88,7 +96,9 @@ console.log(JSON.stringify({passed:true,gateDomains:['creativeTrial:ux','facilit
     await page.goto('http://127.0.0.1:4182/Plenoi-Get-Job/'); await page.waitForFunction(()=>window.CareerGame);
     await page.evaluate(()=>{const C=WILCore,run=CareerGame.initForQA({},0,1771);run.family='database';run.interview=[{passed:true}];run.stage=16;run.node=C.encode({stage:16,family:1,team:2,work:2,pressure:0,chain:0});Object.assign(run.assessment,{expertise:70,problemSolving:70,qualityWork:65});CareerGame.work()});
     const advancedBefore=await page.evaluate(()=>({...CareerGame.getRun().assessment}));assert.equal((await page.evaluate(()=>CareerGame.getScene().s.gate)),'advancedTask');
+    assert.equal((await page.locator('[data-choice="0"]').innerText()).split('\n').slice(1).join('\n'),advancedChoice0Text);
     await page.locator('[data-choice="0"]').click();const advancedAfter=await page.evaluate(()=>({...CareerGame.getRun().assessment}));
+    assert((await page.locator('#app').innerText()).includes(advancedChoice0Reply),'Visible advancedTask feedback must name the mentor and team review');
     assert.equal(advancedAfter.expertise,advancedBefore.expertise);assert.equal(advancedAfter.creativeThinking,advancedBefore.creativeThinking);
     assert(advancedAfter.qualityWork>advancedBefore.qualityWork&&advancedAfter.problemSolving>advancedBefore.problemSolving&&advancedAfter.systematicThinking>advancedBefore.systematicThinking);
     assert(!(await page.locator('#app').innerText()).includes('Expertise +'));
@@ -113,7 +123,7 @@ console.log(JSON.stringify({passed:true,gateDomains:['creativeTrial:ux','facilit
     const noOfferText=await page.locator('#app').innerText(); assert(!noOfferText.includes('เงินเดือนจำลอง')&&!noOfferText.includes('บาท/เดือน'));
     assert.equal(await page.evaluate(()=>CareerGame.getRun().general.wealth),1500,'Simulated future salary must not be added to current wealth');
     assert(!errors.length,errors.join('\n'));
-    fs.writeFileSync(path.join(__dirname,'results','batch5-fix-regressions.json'),JSON.stringify({passed:true,genericAdvancedTask:{noSpecialtyExpertiseAcrossFamilies:true,allChoicesCovered:true,sharedLearningUnchanged:true},visibleSqlTaskStillAwardsExpertise:true,renderedFollowup:{laterDiscovery:true,neutralWording:true},renderedOffer:{salaryTHBPerMonth:amount,explicitlySimulated:true,wealthBefore:wealth,wealthAfter:1500},renderedNoOfferHasNoSalary:true,pageErrors:errors},null,2));
+    fs.writeFileSync(path.join(__dirname,'results','batch6-fix-regressions.json'),JSON.stringify({passed:true,genericAdvancedTask:{noSpecialtyExpertiseAcrossFamilies:true,allChoicesCovered:true,sharedLearningUnchanged:true,choice0Text:advancedChoice0Text,choice0Reply:advancedChoice0Reply,allFamiliesAndChoicesChecked:true,assessmentDeltasUnchanged:true},visibleSqlTaskStillAwardsExpertise:true,renderedFollowup:{laterDiscovery:true,neutralWording:true},renderedOffer:{salaryTHBPerMonth:amount,explicitlySimulated:true,wealthBefore:wealth,wealthAfter:1500},renderedNoOfferHasNoSalary:true,pageErrors:errors},null,2));
     console.log('Rendered follow-up and offer/no-offer browser assertions passed');
   } finally {await browser.close()}
 })().catch(error=>{console.error(error);process.exitCode=1});
