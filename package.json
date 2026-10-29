@@ -1,0 +1,1 @@
+{"name":"plenoi-get-job","version":"2.0.0","private":true,"scripts":{"start":"node scripts/serve.js","graph":"node scripts/build-story-graph.js","build":"node scripts/package.js","test":"node qa/core-tests.js","qa:browser":"node qa/browser-tests.js"}}

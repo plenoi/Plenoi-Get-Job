@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "owner": "main engineer",
+  "method": "20 scripted Edge functional routes: four decision policies × five rounds. This is not four independent reviewer sign-offs.",
+  "policies": [
+    "careful",
+    "mixed",
+    "risk",
+    "repair"
+  ],
+  "roundsEach": 5
+}

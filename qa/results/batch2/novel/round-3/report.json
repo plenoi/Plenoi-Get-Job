@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "buildHash": "6ed2a7d225067abfc3e77a8c9da3de58233ab7842e251d4059ed39538e294822",
+  "role": "novel",
+  "round": 3,
+  "seed": 603,
+  "batch": "batch2",
+  "care": false,
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 188,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 2,
+    "energy": 1,
+    "stress": 100,
+    "sustainable": false,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "fatigueError",
+      "repairedBug",
+      "testEvidence",
+      "containedData",
+      "independentTrial",
+      "fakeDemo",
+      "userEvidence",
+      "scopeOverload",
+      "repairedDeadline",
+      "hiddenBug"
+    ],
+    "history": 94
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

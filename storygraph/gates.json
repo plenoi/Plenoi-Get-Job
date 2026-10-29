@@ -1,0 +1,1678 @@
+[
+  {
+    "id": "hydrate",
+    "when": "Thirsty >= 75",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "hydrate",
+      "title": "คอแห้งจนเริ่มเสียสมาธิ",
+      "text": "คุณยังมีงานต่อ แต่ไม่ได้ดื่มน้ำมาพักใหญ่ จะจัดการอย่างไร?",
+      "location": "office",
+      "options": [
+        {
+          "text": "เติมน้ำจากจุดบริการแล้วกลับมาทำต่อ",
+          "reply": "คุณดื่มน้ำและเริ่มอ่านงานได้สบายขึ้น",
+          "effect": {
+            "stats": {
+              "energy": 2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "thirsty": -65,
+              "happiness": 2
+            },
+            "assessment": {
+              "planning": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ซื้อน้ำแล้วแจ้งทีมว่าจะกลับในครู่เดียว",
+          "reply": "คุณดูแลตัวเองและรักษาการส่งต่อไว้",
+          "effect": {
+            "stats": {
+              "energy": 2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "wealth": -15,
+              "thirsty": -70
+            },
+            "assessment": {
+              "communication": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ดื่มกาแฟแทนโดยยังไม่พัก",
+          "reply": "คุณรู้สึกตื่นขึ้นชั่วคราว แต่ยังควรดื่มน้ำให้พอ",
+          "effect": {
+            "stats": {},
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "wealth": -55,
+              "thirsty": -15,
+              "sleepy": -15,
+              "tired": 5
+            },
+            "assessment": {
+              "planning": -1
+            }
+          },
+          "rank": 1
+        },
+        {
+          "text": "ฝืนต่อจนกว่างานจะจบ",
+          "reply": "คุณอ่านซ้ำหลายรอบ งานช้ากว่าที่คิด",
+          "effect": {
+            "stats": {
+              "quality": -3,
+              "energy": -4
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "thirsty": 5,
+              "happiness": -3
+            },
+            "assessment": {
+              "qualityWork": -2
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "meal",
+    "when": "Hungry >= 75",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "meal",
+      "title": "ท้องร้องกลางงานละเอียด",
+      "text": "ถึงเวลาอาหารแล้ว คุณเริ่มคิดถึงข้าวมากกว่างานตรงหน้า",
+      "location": "cafeteria",
+      "options": [
+        {
+          "text": "พักกินข้าวและส่งสถานะงานไว้",
+          "reply": "คุณกลับมามีแรงและทีมรู้ว่าจะรับช่วงตรงไหน",
+          "effect": {
+            "stats": {
+              "energy": 7
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "wealth": -45,
+              "hungry": -65,
+              "happiness": 5
+            },
+            "assessment": {
+              "planning": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "กินของที่เตรียมมาและพักหน้าจอ",
+          "reply": "มื้อเรียบง่ายช่วยทั้งแรงและเงินในกระเป๋า",
+          "effect": {
+            "stats": {
+              "energy": 5
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "hungry": -50,
+              "happiness": 3
+            },
+            "assessment": {
+              "planning": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ซื้อขนมแล้วทำงานต่อทันที",
+          "reply": "หิวลดลงเล็กน้อย แต่คุณยังไม่ได้พักจริง",
+          "effect": {
+            "stats": {
+              "energy": 2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "wealth": -20,
+              "hungry": -25,
+              "bored": 2
+            },
+            "assessment": {
+              "planning": 0
+            }
+          },
+          "rank": 1
+        },
+        {
+          "text": "ข้ามมื้อเพื่อประหยัดเวลา",
+          "reply": "คุณหงุดหงิดและเริ่มตรวจรายละเอียดข้าม",
+          "effect": {
+            "stats": {
+              "energy": -6,
+              "quality": -3
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "hungry": 8,
+              "happiness": -5
+            },
+            "assessment": {
+              "qualityWork": -2
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "sleep",
+    "when": "Sleepy >= 80 OR Tired >= 90",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "sleep",
+      "title": "ลืมตาอยู่แต่เริ่มจำงานไม่ได้",
+      "text": "ความง่วงทำให้คุณอ่านบรรทัดเดิมซ้ำ งานที่เสี่ยงไม่ควรทำต่อโดยลำพัง",
+      "location": "clinic",
+      "options": [
+        {
+          "text": "ส่งสถานะ ขอคนรับช่วง แล้วพักให้พอ",
+          "reply": "ทีมมีจุดรับช่วง คุณได้ฟื้นกำลังก่อนกลับมาตรวจงาน",
+          "effect": {
+            "stats": {
+              "stress": -8
+            },
+            "rel": {
+              "mentor": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "sleepy": -55,
+              "tired": -35,
+              "happiness": 4
+            },
+            "assessment": {
+              "planning": 2,
+              "communication": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "หยุดงานเสี่ยงและขอเพื่อนตรวจคู่ก่อน",
+          "reply": "งานบางส่วนเดินต่อได้ แต่ยังต้องนัดเวลาพักจริง",
+          "effect": {
+            "stats": {
+              "stress": -2
+            },
+            "rel": {
+              "peer": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "sleepy": -10,
+              "tired": -10
+            },
+            "assessment": {
+              "teamwork": 2
+            }
+          },
+          "rank": 2
+        },
+        {
+          "text": "เพิ่มคาเฟอีนแล้วรับงานเพิ่ม",
+          "reply": "ตื่นขึ้นชั่วคราว แต่กำลังที่ใช้เกินยังสะสม",
+          "effect": {
+            "stats": {
+              "stress": 5
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "wealth": -60,
+              "sleepy": -20,
+              "tired": 8,
+              "happiness": -2
+            },
+            "assessment": {
+              "planning": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "ปิดแชตแล้วหายไปโดยไม่ส่งงาน",
+          "reply": "การพักช่วยตัวคุณ แต่ทีมไม่รู้สถานะงาน",
+          "effect": {
+            "stats": {
+              "reliability": -4
+            },
+            "rel": {
+              "lead": -3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "sleepy": -35,
+              "tired": -25
+            },
+            "assessment": {
+              "communication": -3,
+              "punctuality": -2
+            }
+          },
+          "rank": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "budget",
+    "when": "Wealth < 100",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "budget",
+      "title": "เงินก่อนสิ้นเดือน",
+      "text": "งบที่เหลือทำให้คุณต้องเลือกค่าเดินทางกับอาหารอย่างรอบคอบ",
+      "location": "cafeteria",
+      "options": [
+        {
+          "text": "วางงบจำเป็นและใช้ของที่เตรียมมา",
+          "reply": "คุณเห็นทางประคองถึงรอบเบี้ยเลี้ยงโดยไม่ข้ามมื้อ",
+          "effect": {
+            "stats": {},
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "hungry": -30,
+              "happiness": 2
+            },
+            "assessment": {
+              "planning": 3,
+              "problemSolving": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ถาม HR เรื่องรอบจ่ายและความช่วยเหลือ",
+          "reply": "คุณได้ข้อมูลที่ยืนยันได้และวางแผนต่อ",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "hr": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 3
+            },
+            "assessment": {
+              "assertiveness": 2,
+              "communication": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ยืมเพื่อนโดยยังไม่ตกลงคืน",
+          "reply": "ปัญหาเงินเลื่อนไปเป็นภาระความสัมพันธ์",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": -3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "wealth": 200,
+              "happiness": -2
+            },
+            "assessment": {
+              "integrity": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "ข้ามอาหารและน้ำทุกวัน",
+          "reply": "เงินคงอยู่ แต่สุขภาพและสมาธิเริ่มเสีย",
+          "effect": {
+            "stats": {
+              "health": -4
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "hungry": 10,
+              "thirsty": 10,
+              "happiness": -5
+            },
+            "assessment": {
+              "planning": -2
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "newChallenge",
+    "when": "Bored >= 70 AND Motivation >= 40",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "newChallenge",
+      "title": "งานเดิมเริ่มไม่ท้าทาย",
+      "text": "คุณทำงานรูปแบบเดิมจนเริ่มใจลอย พี่เมย์เปิดโอกาสให้เสนอสิ่งที่จะเรียนต่อ",
+      "location": "lab",
+      "options": [
+        {
+          "text": "เสนอทดลองปรับหนึ่งจุดพร้อมวิธีวัดผล",
+          "reply": "คุณได้โจทย์ใหม่ที่มีขอบเขตและเห็นว่ามันช่วยอะไร",
+          "effect": {
+            "stats": {
+              "energy": -3
+            },
+            "rel": {
+              "mentor": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "bored": -45,
+              "happiness": 6
+            },
+            "assessment": {
+              "creativeThinking": 3,
+              "expertise": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ขอสลับไปช่วยงานที่ใช้ทักษะใกล้กัน",
+          "reply": "คุณเห็นอีกมุมของทีมโดยยังส่งต่องานเดิมได้",
+          "effect": {
+            "stats": {
+              "energy": -2
+            },
+            "rel": {
+              "peer": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "bored": -35,
+              "happiness": 4
+            },
+            "assessment": {
+              "adaptation": 3,
+              "teamwork": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "เปิดหลายอย่างค้างเพื่อให้ดูยุ่ง",
+          "reply": "งานเยอะขึ้นแต่ไม่มีอะไรใหม่ที่เรียนรู้",
+          "effect": {
+            "stats": {
+              "quality": -2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "bored": 5,
+              "happiness": -2
+            },
+            "assessment": {
+              "planning": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "ทำขั้นต่ำแล้วไม่ติดตามผล",
+          "reply": "ทีมไม่เห็นว่าคุณติดอยู่ตรงไหน",
+          "effect": {
+            "stats": {
+              "reliability": -2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "bored": 7
+            },
+            "assessment": {
+              "motivation": -3
+            }
+          },
+          "rank": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "leadRole",
+    "when": "Planning >= 65 AND Logical Thinking >= 60 AND Lead Respect >= 60; seeded chance 35%",
+    "once": true,
+    "chance": 35,
+    "scene": {
+      "id": "leadRole",
+      "title": "หัวหน้าลองให้คุณนำงานย่อย",
+      "text": "ผลงานก่อนหน้าทำให้พี่ต้นไว้ใจ คุณได้รับงานที่ต้องแบ่งหน้าที่และติดตามผลคนอื่น",
+      "location": "meeting",
+      "options": [
+        {
+          "text": "ตกลงเป้าหมาย บทบาท และจุดตรวจร่วมกัน",
+          "reply": "ทีมมีขอบเขตร่วมและรู้ว่าใครต้องการความช่วยเหลือ",
+          "effect": {
+            "stats": {
+              "energy": -4
+            },
+            "rel": {
+              "lead": 3,
+              "peer": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 5,
+              "bored": -15
+            },
+            "assessment": {
+              "planning": 3,
+              "assertiveness": 3,
+              "teamwork": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ชวนทีมเลือกวิธีทำก่อนแบ่งงาน",
+          "reply": "ได้ความร่วมมือ แต่ต้องปิดข้อสรุปเรื่องเวลาให้ชัด",
+          "effect": {
+            "stats": {
+              "energy": -3
+            },
+            "rel": {
+              "peer": 3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 3,
+              "bored": -10
+            },
+            "assessment": {
+              "communication": 3,
+              "teamwork": 2
+            }
+          },
+          "rank": 2
+        },
+        {
+          "text": "รับทุกส่วนมาทำเองเพื่อให้มั่นใจ",
+          "reply": "งานนำทีมกลายเป็นงานที่คุณแบกคนเดียว",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "tired": 8
+            },
+            "assessment": {
+              "planning": -2,
+              "teamwork": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "สั่งอย่างเดียวโดยไม่ฟังข้อจำกัด",
+          "reply": "คนในทีมทำตามลำบากและไม่กล้าบอกปัญหา",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": -4
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -4
+            },
+            "assessment": {
+              "manner": -3,
+              "communication": -2
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "collaboration",
+    "when": "Peer Friendly >= 65 AND Team Work >= 55; seeded chance 35%",
+    "once": true,
+    "chance": 35,
+    "scene": {
+      "id": "collaboration",
+      "title": "ฟ้าชวนทำเดโมร่วมกัน",
+      "text": "ความเป็นมิตรที่สะสมทำให้ฟ้ากล้าชวนคุณลองงานที่ต้องช่วยกันคิด",
+      "location": "studio",
+      "options": [
+        {
+          "text": "แบ่งส่วนทดลองแล้วเทียบผลร่วมกัน",
+          "reply": "คุณทั้งคู่เจอวิธีที่คนเดียวมองไม่เห็น",
+          "effect": {
+            "stats": {
+              "energy": -3
+            },
+            "rel": {
+              "peer": 3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 6,
+              "bored": -20
+            },
+            "assessment": {
+              "creativeThinking": 3,
+              "teamwork": 3
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ช่วยรีวิวงานของกันและกันก่อนรวม",
+          "reply": "คุณได้หลักฐานตรวจทานและเข้าใจงานเพื่อนขึ้น",
+          "effect": {
+            "stats": {
+              "energy": -2
+            },
+            "rel": {
+              "peer": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 4,
+              "bored": -15
+            },
+            "assessment": {
+              "qualityWork": 2,
+              "teamwork": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ทำแทนทั้งหมดโดยไม่ถามเป้าหมายเพื่อน",
+          "reply": "งานเสร็จแต่ฟ้าไม่ได้มีส่วนตัดสินใจ",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "tired": 5
+            },
+            "assessment": {
+              "teamwork": -2
+            }
+          },
+          "rank": 1
+        },
+        {
+          "text": "ใช้ชื่อร่วมแต่ไม่ช่วยทำ",
+          "reply": "ฟ้ารู้สึกว่าความสนิทถูกใช้แทนความรับผิดชอบ",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": -5
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -3
+            },
+            "assessment": {
+              "integrity": -4,
+              "teamwork": -3
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "tension",
+    "when": "Any NPC Tension >= 65",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "tension",
+      "title": "ความตึงเครียดเริ่มขวางงาน",
+      "text": "ทีมยังต้องทำงานร่วมกัน แต่บางคนไม่กล้าถามและเริ่มตีความข้อความในแง่ร้าย",
+      "location": "meeting",
+      "options": [
+        {
+          "text": "ชวนคุยข้อเท็จจริงพร้อมคนกลาง",
+          "reply": "ทุกฝ่ายได้พูดโดยมีข้อตกลงเรื่องวิธีคุย",
+          "effect": {
+            "stats": {
+              "stress": -4
+            },
+            "rel": {
+              "peer": 3,
+              "lead": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 3
+            },
+            "assessment": {
+              "manner": 2,
+              "communication": 3
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ขอโทษพฤติกรรมที่ทำจริงและเสนอวิธีแก้",
+          "reply": "ทีมเห็นสิ่งที่จะเปลี่ยน ไม่ใช่คำขอโทษลอย ๆ",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": 4
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 2
+            },
+            "assessment": {
+              "integrity": 3,
+              "assertiveness": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ประชดว่าทุกคนอ่อนไหวเกินไป",
+          "reply": "ความรู้สึกถูกปัดทิ้งและความขัดแย้งเพิ่ม",
+          "effect": {
+            "stats": {
+              "stress": 3
+            },
+            "rel": {
+              "peer": -5,
+              "lead": -3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -4
+            },
+            "assessment": {
+              "manner": -4
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "หลีกเลี่ยงการติดต่อทั้งหมด",
+          "reply": "งานที่ต้องส่งต่อไม่มีคนกล้าทักถาม",
+          "effect": {
+            "stats": {
+              "reliability": -3
+            },
+            "rel": {
+              "peer": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -3
+            },
+            "assessment": {
+              "communication": -3
+            }
+          },
+          "rank": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "advancedTask",
+    "when": "Expertise >= 60 AND Problem Solving >= 60 AND Working Quality >= 55",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "advancedTask",
+      "title": "งานที่ต้องใช้หลักฐานมากกว่าคำตอบ",
+      "text": "พี่เมย์เห็นพัฒนาการของคุณ จึงให้ตรวจกรณีที่ผลทดสอบเดิมยังตอบไม่ได้",
+      "location": "lab",
+      "options": [
+        {
+          "text": "ทดสอบจุดเสี่ยงที่ยังไม่มีหลักฐาน",
+          "reply": "คุณพบข้อผิดพลาดก่อนส่ง และบันทึกวิธีตรวจซ้ำไว้",
+          "effect": {
+            "stats": {
+              "quality": 4,
+              "energy": -3
+            },
+            "rel": {
+              "mentor": 2
+            },
+            "context": [
+              0,
+              1,
+              0
+            ],
+            "chain": null,
+            "flag": "testEvidence"
+          },
+          "rank": 3
+        },
+        {
+          "text": "ขอ feedback จากผู้ใช้หนึ่งงานหลัก",
+          "reply": "คุณเห็นจุดที่ผู้ใช้ติดซึ่งทีมมองข้าม",
+          "effect": {
+            "stats": {
+              "quality": 3,
+              "energy": -2
+            },
+            "rel": {
+              "peer": 2
+            },
+            "context": [
+              1,
+              1,
+              0
+            ],
+            "chain": null,
+            "flag": "userEvidence"
+          },
+          "rank": 3
+        },
+        {
+          "text": "ขัดรายละเอียดให้สวยขึ้นก่อน",
+          "reply": "ภาพรวมดีขึ้น แต่จุดเสี่ยงเดิมยังไม่ได้ทดสอบ",
+          "effect": {
+            "stats": {
+              "quality": 1,
+              "energy": -4
+            },
+            "rel": {
+              "mentor": 0
+            },
+            "context": [
+              0,
+              0,
+              1
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 1
+        },
+        {
+          "text": "ส่งเลยเพราะยังไม่มีคนเจอบั๊ก",
+          "reply": "ข้อผิดพลาดที่ยังไม่ถูกตรวจไม่เท่ากับไม่มีข้อผิดพลาด",
+          "effect": {
+            "stats": {
+              "quality": -3
+            },
+            "rel": {
+              "mentor": -2
+            },
+            "context": [
+              0,
+              -1,
+              1
+            ],
+            "chain": 1,
+            "flag": "untestedWork"
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "creativeTrial",
+    "when": "Creativity >= 60 AND Adjustment >= 55",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "creativeTrial",
+      "title": "เปิดทางให้ต้นแบบของคุณ",
+      "text": "ทีมให้คุณลองต้นแบบทางเลือกหนึ่งแบบ โดยต้องพิสูจน์ว่ามันช่วยผู้ใช้จริง",
+      "location": "studio",
+      "options": [
+        {
+          "text": "ให้ผู้ใช้ลองงานหนึ่งชิ้นแล้วสังเกตขั้นที่ติด",
+          "reply": "คุณเห็นสาเหตุที่ความเห็นกว้าง ๆ ยังอธิบายไม่ได้",
+          "effect": {
+            "stats": {
+              "quality": 4,
+              "energy": -3
+            },
+            "rel": {
+              "peer": 1,
+              "mentor": 1
+            },
+            "context": [
+              1,
+              1,
+              0
+            ],
+            "chain": null,
+            "flag": "userEvidence"
+          },
+          "rank": 3
+        },
+        {
+          "text": "เทียบข้อมูลการใช้งานก่อนถามเพิ่ม",
+          "reply": "เห็นจุดที่อาจหลุด แต่ยังต้องตรวจว่าตีความถูกหรือไม่",
+          "effect": {
+            "stats": {
+              "quality": 2,
+              "energy": -2
+            },
+            "rel": {
+              "mentor": 1
+            },
+            "context": [
+              0,
+              1,
+              0
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 2
+        },
+        {
+          "text": "เปลี่ยนหน้าตาทั้งหมดตามความรู้สึก",
+          "reply": "รูปแบบเปลี่ยนแล้ว แต่ผู้ใช้ยังติดขั้นเดิม",
+          "effect": {
+            "stats": {
+              "quality": -3,
+              "energy": -6
+            },
+            "rel": {
+              "peer": -1
+            },
+            "context": [
+              0,
+              -1,
+              1
+            ],
+            "chain": 1,
+            "flag": "unvalidatedRedesign"
+          },
+          "rank": 0
+        },
+        {
+          "text": "บอกว่าทำตามเอกสารเดิมครบแล้ว",
+          "reply": "ข้อจำกัดของผู้ใช้ยังไม่ได้รับการตรวจ",
+          "effect": {
+            "stats": {
+              "reliability": -3
+            },
+            "rel": {
+              "peer": -3
+            },
+            "context": [
+              -1,
+              0,
+              1
+            ],
+            "chain": 4,
+            "flag": "dismissedUser"
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "soloDelivery",
+    "when": "Punctual >= 60 AND Motivation >= 60 AND Lead Trust >= 60",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "soloDelivery",
+      "title": "ส่งงานโดยไม่มีคนคอยตาม",
+      "text": "หัวหน้าให้คุณนัดและส่งงานกับอีกทีมเอง ความตรงเวลาที่สะสมทำให้คุณได้ความรับผิดชอบเพิ่ม",
+      "location": "office",
+      "options": [
+        {
+          "text": "รวมสถานะ วิธีรัน และสิ่งที่ยังติดไว้ที่เดียว",
+          "reply": "เช้าวันถัดมาเพื่อนเริ่มงานต่อได้โดยไม่ต้องรอคุณ",
+          "effect": {
+            "stats": {
+              "reliability": 4,
+              "quality": 2,
+              "energy": -3
+            },
+            "rel": {
+              "peer": 3
+            },
+            "context": [
+              1,
+              1,
+              0
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 3
+        },
+        {
+          "text": "นัดคุยสั้นพร้อมส่งลิงก์งาน",
+          "reply": "เริ่มต่อได้ แต่เพื่อนต้องจดรายละเอียดบางอย่างเอง",
+          "effect": {
+            "stats": {
+              "reliability": 2,
+              "energy": -2
+            },
+            "rel": {
+              "peer": 2
+            },
+            "context": [
+              1,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 2
+        },
+        {
+          "text": "ส่งโฟลเดอร์ทั้งหมดให้เลือกเอง",
+          "reply": "เพื่อนเปิดผิดรุ่นและทำงานซ้ำ",
+          "effect": {
+            "stats": {
+              "quality": -3,
+              "reliability": -4
+            },
+            "rel": {
+              "peer": -3
+            },
+            "context": [
+              -1,
+              -1,
+              1
+            ],
+            "chain": 2,
+            "flag": "badHandoff"
+          },
+          "rank": 0
+        },
+        {
+          "text": "บอกว่าไม่เข้าใจตรงไหนให้ทักมา",
+          "reply": "คุณออฟไลน์ตอนที่เพื่อนติด งานจึงค้าง",
+          "effect": {
+            "stats": {
+              "reliability": -3
+            },
+            "rel": {
+              "peer": -2
+            },
+            "context": [
+              -1,
+              0,
+              1
+            ],
+            "chain": 2,
+            "flag": "blockedHandoff"
+          },
+          "rank": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "facilitate",
+    "when": "Communication >= 60 AND Assertiveness >= 60 AND Manner >= 50",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "facilitate",
+      "title": "คุณเป็นคนช่วยให้สองฝ่ายคุยกัน",
+      "text": "เพื่อนกับหัวหน้าตีความเกณฑ์งานต่างกัน ทีมขอให้คุณช่วยถามจนเห็นข้อสรุปร่วม",
+      "location": "meeting",
+      "options": [
+        {
+          "text": "ขอเกณฑ์และเทียบข้อดีเสียของสองแบบ",
+          "reply": "หัวหน้าอธิบายข้อจำกัดที่คุณยังไม่รู้ และรับฟังทางเลือก",
+          "effect": {
+            "stats": {
+              "quality": 4,
+              "energy": -3
+            },
+            "rel": {
+              "lead": 3
+            },
+            "context": [
+              1,
+              1,
+              0
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 3
+        },
+        {
+          "text": "ทำต้นแบบเล็กมาเทียบให้เห็นผล",
+          "reply": "ใช้เวลาเพิ่ม แต่มีหลักฐานที่คุยกันได้",
+          "effect": {
+            "stats": {
+              "quality": 4,
+              "energy": -6
+            },
+            "rel": {
+              "mentor": 2
+            },
+            "context": [
+              0,
+              1,
+              1
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 2
+        },
+        {
+          "text": "แก้ทั้งหมดโดยไม่ถาม",
+          "reply": "งานเปลี่ยนแล้ว แต่เหตุผลเดิมยังค้างอยู่ในใจคุณ",
+          "effect": {
+            "stats": {
+              "quality": 1,
+              "energy": -5
+            },
+            "rel": {
+              "lead": 1
+            },
+            "context": [
+              0,
+              0,
+              1
+            ],
+            "chain": null,
+            "flag": ""
+          },
+          "rank": 1
+        },
+        {
+          "text": "เถียงต่อหน้าทีมว่าของเดิมดีกว่า",
+          "reply": "เพื่อนเงียบลง ประเด็นงานกลายเป็นเรื่องน้ำเสียง",
+          "effect": {
+            "stats": {
+              "reliability": -3
+            },
+            "rel": {
+              "lead": -5,
+              "peer": -2
+            },
+            "context": [
+              -1,
+              -1,
+              1
+            ],
+            "chain": 4,
+            "flag": "publicArgument"
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "ethicsReview",
+    "when": "Morality < 25 AND recorded conduct incident",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "ethicsReview",
+      "title": "HR ขอทบทวนเหตุที่กระทบความไว้ใจ",
+      "text": "พี่ลินขอข้อเท็จจริงเกี่ยวกับเหตุที่บันทึกไว้ การทบทวนครั้งนี้ดูทั้งความรับผิดชอบและวิธีแก้",
+      "location": "server_room",
+      "options": [
+        {
+          "text": "แจ้งสิ่งที่เปิดเผย ผู้เข้าถึง เวลา และสิ่งที่ทำตามจริง",
+          "reply": "ทีมตามขอบเขตได้ คุณรับผิดชอบโดยไม่ซ่อนข้อมูล",
+          "effect": {
+            "stats": {
+              "reliability": 3,
+              "energy": -3
+            },
+            "rel": {
+              "hr": 2,
+              "lead": 1
+            },
+            "context": [
+              1,
+              1,
+              0
+            ],
+            "chain": 0,
+            "flag": "repairedData"
+          },
+          "rank": 3
+        },
+        {
+          "text": "ส่งรายการที่รู้ก่อน แล้วตามส่วนที่เหลือ",
+          "reply": "ทีมเริ่มควบคุมเหตุได้ แต่ต้องนัดอัปเดตให้ครบ",
+          "effect": {
+            "stats": {
+              "reliability": 1
+            },
+            "rel": {
+              "hr": 1
+            },
+            "context": [
+              0,
+              1,
+              0
+            ],
+            "chain": 3,
+            "flag": ""
+          },
+          "rank": 2
+        },
+        {
+          "text": "ลบประวัติแชร์เพื่อไม่ให้มีชื่อคุณ",
+          "reply": "หลักฐานขาดหาย ทีมควบคุมเหตุยากขึ้น",
+          "effect": {
+            "stats": {
+              "reliability": -8
+            },
+            "rel": {
+              "hr": -8,
+              "lead": -5
+            },
+            "context": [
+              -1,
+              -1,
+              1
+            ],
+            "chain": 3,
+            "flag": "concealedData"
+          },
+          "rank": 0
+        },
+        {
+          "text": "คิดว่าไม่มีใครดาวน์โหลดจึงไม่รายงาน",
+          "reply": "ยังไม่มีหลักฐานว่าปลอดภัย การคาดเดาทำให้เหตุยืดเยื้อ",
+          "effect": {
+            "stats": {
+              "quality": -3,
+              "reliability": -5
+            },
+            "rel": {
+              "hr": -4
+            },
+            "context": [
+              -1,
+              -1,
+              1
+            ],
+            "chain": 3,
+            "flag": "ignoredData"
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "careFromPeer",
+    "when": "Peer Affection >= 50 AND Happiness < 45; seeded chance 60%",
+    "once": true,
+    "chance": 60,
+    "scene": {
+      "id": "careFromPeer",
+      "title": "ฟ้าสังเกตว่าคุณเงียบไป",
+      "text": "ความผูกพันทำให้เพื่อนกล้าถามว่าคุณไหวหรือเปล่า คุณเลือกได้ว่าจะบอกขอบเขตและขอความช่วยเหลืออย่างไร",
+      "location": "office",
+      "options": [
+        {
+          "text": "บอกสิ่งที่ติดและความช่วยเหลือที่ต้องการ",
+          "reply": "ฟ้ารับฟังโดยไม่เร่งให้คุณหายดีทันที",
+          "effect": {
+            "stats": {
+              "stress": -5
+            },
+            "rel": {
+              "peer": 3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 10,
+              "bored": -10
+            },
+            "assessment": {
+              "communication": 2,
+              "assertiveness": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ขอเวลาสงบแล้วนัดกลับมาคุย",
+          "reply": "ฟ้ารู้ว่าควรให้พื้นที่และจะติดตามเมื่อไร",
+          "effect": {
+            "stats": {
+              "stress": -3
+            },
+            "rel": {
+              "peer": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": 5
+            },
+            "assessment": {
+              "assertiveness": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "บอกว่าไม่เป็นไรทั้งที่งานเริ่มกระทบ",
+          "reply": "เพื่อนยังไม่รู้ว่าจะช่วยตรงไหน",
+          "effect": {
+            "stats": {
+              "stress": 2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -1
+            },
+            "assessment": {
+              "communication": -1
+            }
+          },
+          "rank": 1
+        },
+        {
+          "text": "ระบายใส่เพื่อนว่าอย่ามายุ่ง",
+          "reply": "ฟ้าถอยออกมา ความห่วงใยกลายเป็นความกังวล",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": -4
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -4
+            },
+            "assessment": {
+              "manner": -3
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "medical",
+    "when": "Healthy < 35",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "medical",
+      "title": "สุขภาพเริ่มขวางการทำงาน",
+      "text": "อาการทางกายทำให้คุณต้องเลือกดูแลตัวเองพร้อมจัดการสถานะงาน",
+      "location": "clinic",
+      "options": [
+        {
+          "text": "ขอหยุดตรวจอาการและส่งงานที่ค้างให้ทีม",
+          "reply": "ทีมมีข้อมูลรับช่วง คุณได้ดูแลอาการโดยไม่ต้องซ่อน",
+          "effect": {
+            "stats": {
+              "energy": 8
+            },
+            "rel": {
+              "mentor": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 15,
+              "wealth": -100,
+              "happiness": 3
+            },
+            "assessment": {
+              "communication": 2,
+              "planning": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "แจ้ง HR และขอข้อมูลสิทธิ์การดูแล",
+          "reply": "คุณได้ช่องทางช่วยเหลือและรู้ขั้นตอนลาที่ถูกต้อง",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "hr": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 7,
+              "happiness": 3
+            },
+            "assessment": {
+              "assertiveness": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ฝืนทำต่อโดยไม่บอกใคร",
+          "reply": "อาการและความล้าเพิ่ม ทีมยังไม่รู้ข้อจำกัดของคุณ",
+          "effect": {
+            "stats": {
+              "quality": -3
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": -6,
+              "tired": 8
+            },
+            "assessment": {
+              "communication": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "หายไปโดยไม่มีสถานะงาน",
+          "reply": "คุณได้พักบ้าง แต่ทีมต้องตามงานที่ยังไม่ส่งต่อ",
+          "effect": {
+            "stats": {
+              "reliability": -3
+            },
+            "rel": {
+              "lead": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 4,
+              "tired": -10
+            },
+            "assessment": {
+              "communication": -3
+            }
+          },
+          "rank": 1
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "sourceHash": "cd239793af6d5f07badaaf2a53547687e0c4a15ec495816d38d61f6998ef798d",
+  "nodes": 161000,
+  "storyNodes": 160000,
+  "endingLeaves": 1000,
+  "choices": 640000,
+  "stages": 80,
+  "dimensions": {
+    "stages": 80,
+    "families": 8,
+    "teamContext": 5,
+    "workContext": 5,
+    "pressure": 2,
+    "openCausalChain": 5
+  },
+  "format": "UTF-8 JSON Lines, gzip",
+  "data": "nodes.jsonl.gz",
+  "conditionalDefinitions": "gates.json",
+  "gateRules": 15,
+  "endingAxes": {
+    "outcome": 5,
+    "workSummaryTheme": 5,
+    "closingNarrator": 4,
+    "nextStep": 2,
+    "causalCallback": 5
+  },
+  "renderer": "../sim-art.js",
+  "runtimeRules": "../sim-core.js",
+  "terminalSelector": "outcome-v2",
+  "description": "Explicit compiled story-state DAG, not 161000 independently written scenes. Nodes share authored scenarios; each node has its own state/scene descriptor and four causal transitions. Full numeric history is evaluated by terminal guards.",
+  "bytes": 19093169
+}

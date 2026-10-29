@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "buildHash": "b85965af890e1adde7d89859208d46ce5223f57ca0e04d2c361f9c09cdba1661",
+  "role": "game",
+  "round": 1,
+  "seed": 17,
+  "batch": "smoke2",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 188,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 2,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "testEvidence",
+      "containedData",
+      "independentTrial",
+      "userEvidence"
+    ],
+    "history": 94
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

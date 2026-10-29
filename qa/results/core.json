@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": 17,
+  "names": [
+    "CV skill evidence separates job families",
+    "Negation, interests and token boundaries do not create evidence",
+    "Every graph node has a scene and four causal edges; endings are leaves",
+    "Unsafe choices cause a traceable incident and repair keeps history",
+    "Poor route does not receive universal affection or an offer",
+    "Offer availability remains below five percent even for excellent runs",
+    "Practical exercises have four distinct choices and code patches pass real cases",
+    "Lessons unlock harder material after mastery; repeat is labeled honestly",
+    "Expression interpreter cannot execute scripts",
+    "Explicit job stacks do not match unrelated web language evidence",
+    "Story scenes progress and data setup is actually scheduled",
+    "New social incident is queued without erasing the open work problem",
+    "Sustained exhaustion affects working quality and opens recovery choices",
+    "Assessment, personal needs and individual relationships are real state",
+    "Threshold gates link to explicit scene choices and actual next nodes",
+    "Exactly one thousand distinct ending leaves round trip",
+    "Specialist job titles are not interchangeable with related broad CVs"
+  ],
+  "nodeCount": 161000,
+  "edges": 640000,
+  "templates": 40
+}

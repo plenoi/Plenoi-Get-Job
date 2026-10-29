@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "buildHash": "d727d8ad4a5af03f48fbcf881d54c8f059983adc652d6c95b5c9d7514fb1906c",
+  "role": "repair",
+  "round": 4,
+  "seed": 1304,
+  "batch": "engineer-final",
+  "care": true,
+  "policy": "repair",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 196,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 3,
+    "energy": 47,
+    "stress": 0,
+    "sustainable": true,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "unspokenConflict",
+      "testEvidence",
+      "containedData",
+      "blockedHandoff",
+      "repairedDeadline",
+      "userEvidence",
+      "publicArgument",
+      "independentTrial",
+      "regression",
+      "repairedBug",
+      "blockedTeam",
+      "unreportedBlock"
+    ],
+    "history": 102
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

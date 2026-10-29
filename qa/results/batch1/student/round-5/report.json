@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "buildHash": "2f2f0e77ba34c9ab551bd369f90823518fdb0a01c4c855d4c10eaed92cfc599a",
+  "role": "student",
+  "round": 5,
+  "seed": 405,
+  "batch": "batch1",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 188,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 3,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "testEvidence",
+      "userEvidence"
+    ],
+    "history": 124
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

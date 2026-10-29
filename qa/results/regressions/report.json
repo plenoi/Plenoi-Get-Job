@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "angry": true,
+  "images": true,
+  "queued": true,
+  "resumed": true,
+  "peerPixelsChanged": true,
+  "teacherIdentity": true,
+  "nonPatchHeadings": true,
+  "uniqueInterview": true,
+  "mobileOffice": true,
+  "pageErrors": []
+}

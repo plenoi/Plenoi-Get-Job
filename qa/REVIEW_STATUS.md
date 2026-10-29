@@ -1,0 +1,9 @@
+# Review status — 2026-10-29, Asia/Bangkok
+
+Batch 1 completed five independent scripted browser rounds for each of four AI reviewer roles. All functional paths passed, but every specialist reported actionable defects. The batch was not clean.
+
+Batch 2 began after collective fixes. The separate agents then hit the account's usage limit. Their partially completed execution files and messages are preserved. The latest product changes requested by the user (assessment14, personal needs8, individual bond dimensions, threshold-gated scenes, exactly1000 endings) happened after that interrupted batch. No claim is made that all four independent reviewers completed a clean final five-round batch on this latest build.
+
+The main engineer continues direct verification with core rules, explicit graph integrity, real synthetic-PDF upload, editable-code patches, browser regression paths, mobile layouts, individual threshold gates and image-identifier samples. These automated tests are not a substitute for the interrupted independent editorial/student reviews or human playtesting. Remaining independent reviews must restart five fresh rounds on an unchanged build when agents are available.
+
+Known verification limits: scenario composition reuses scene layouts and authored action families; the161000-node artifact is a compiled context DAG with guarded events and terminal evaluation, not161000 independently written stories or manually painted scenes. A deterministic scene renderer supplies each node image; inspected samples and unique node-detail encoding are checked, not161000 human visual reviews. Ending1000 variants combine meaningful closure dimensions and actual route callbacks; employment probability depends on performance and a seeded availability slot, not the number of catalog leaves.

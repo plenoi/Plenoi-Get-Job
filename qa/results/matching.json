@@ -1,0 +1,110 @@
+{
+  "blank": {
+    "jobs": 584,
+    "fit60plus": 0,
+    "fit0": 584,
+    "top": [
+      {
+        "role": "Programming (SSO Interface)",
+        "score": 0
+      },
+      {
+        "role": "Programming (Data API)",
+        "score": 0
+      },
+      {
+        "role": "Developer",
+        "score": 0
+      },
+      {
+        "role": "Programmer",
+        "score": 0
+      },
+      {
+        "role": "Programmer / Developer",
+        "score": 0
+      }
+    ]
+  },
+  "web": {
+    "jobs": 584,
+    "fit60plus": 53,
+    "fit0": 364,
+    "top": [
+      {
+        "role": "Programming (SSO Interface)",
+        "score": 74
+      },
+      {
+        "role": "Programmer",
+        "score": 74
+      },
+      {
+        "role": "Web Developer",
+        "score": 74
+      },
+      {
+        "role": "Frontend",
+        "score": 74
+      },
+      {
+        "role": "Front-end Developer",
+        "score": 74
+      }
+    ]
+  },
+  "ux": {
+    "jobs": 584,
+    "fit60plus": 24,
+    "fit0": 501,
+    "top": [
+      {
+        "role": "UI Design",
+        "score": 74
+      },
+      {
+        "role": "Junior UX / UX Designer",
+        "score": 74
+      },
+      {
+        "role": "UX/UI Developer",
+        "score": 74
+      },
+      {
+        "role": "Chatbot UX (Customer Journey Expert)",
+        "score": 74
+      },
+      {
+        "role": "UX/UI",
+        "score": 74
+      }
+    ]
+  },
+  "accounting": {
+    "jobs": 584,
+    "fit60plus": 2,
+    "fit0": 267,
+    "top": [
+      {
+        "role": "เจ้าหน้าที่บัญชีและการเงิน",
+        "score": 74
+      },
+      {
+        "role": "Accounting trainee",
+        "score": 74
+      },
+      {
+        "role": "Accounting Trainee",
+        "score": 56
+      },
+      {
+        "role": "Business Engineering",
+        "score": 49
+      },
+      {
+        "role": "Business Consulting Assistant",
+        "score": 49
+      }
+    ]
+  }
+}

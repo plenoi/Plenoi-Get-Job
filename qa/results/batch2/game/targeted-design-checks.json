@@ -1,0 +1,281 @@
+{
+  "method": "Independent source-rule signature analysis and targeted browser geometry",
+  "nonTechnicalDecisions": 60,
+  "uniquePromptAndOptionSignatures": 25,
+  "repeatedSignatures": [
+    [
+      {
+        "stage": 2,
+        "title": "สองงานแรกชนกัน",
+        "id": "deadline"
+      },
+      {
+        "stage": 26,
+        "title": "สองทีมรอคนละส่วน",
+        "id": "deadline"
+      },
+      {
+        "stage": 42,
+        "title": "ส่วนใหม่ชนงานเดิม",
+        "id": "deadline"
+      },
+      {
+        "stage": 66,
+        "title": "ของที่ต้องพร้อมก่อนเดโม",
+        "id": "deadline"
+      }
+    ],
+    [
+      {
+        "stage": 5,
+        "title": "เริ่มรู้จังหวะของตัวเอง",
+        "id": "health"
+      },
+      {
+        "stage": 21,
+        "title": "ความละเอียดในสัปดาห์แก้งาน",
+        "id": "health"
+      },
+      {
+        "stage": 37,
+        "title": "พักก่อนสอบแผนงาน",
+        "id": "health"
+      },
+      {
+        "stage": 61,
+        "title": "พักก่อนตัดสินใจงานเสี่ยง",
+        "id": "health"
+      },
+      {
+        "stage": 77,
+        "title": "ส่งงานโดยยังดูแลตัวเอง",
+        "id": "health"
+      }
+    ],
+    [
+      {
+        "stage": 6,
+        "title": "รีวิวครั้งแรก",
+        "id": "review"
+      },
+      {
+        "stage": 14,
+        "title": "เกณฑ์ที่ผู้ใช้ต้องการจริง",
+        "id": "review"
+      },
+      {
+        "stage": 30,
+        "title": "เกณฑ์ของอีกทีม",
+        "id": "review"
+      },
+      {
+        "stage": 46,
+        "title": "ข้อจำกัดของส่วนที่เพิ่ม",
+        "id": "review"
+      },
+      {
+        "stage": 54,
+        "title": "รีวิวงานที่คุณตัดสินใจเอง",
+        "id": "review"
+      },
+      {
+        "stage": 70,
+        "title": "สิ่งที่หัวหน้าอยากเห็นในเดโม",
+        "id": "review"
+      },
+      {
+        "stage": 78,
+        "title": "ข้อตรวจสุดท้ายก่อนส่งมอบ",
+        "id": "review"
+      }
+    ],
+    [
+      {
+        "stage": 10,
+        "title": "ไฟล์จริงที่เผลอใช้",
+        "id": "data"
+      },
+      {
+        "stage": 29,
+        "title": "สิทธิ์ของทีมที่เพิ่มมา",
+        "id": "data"
+      },
+      {
+        "stage": 40,
+        "title": "ข้อมูลที่ส่งให้คนภายนอก",
+        "id": "data"
+      },
+      {
+        "stage": 58,
+        "title": "ชุดทดสอบก่อนปล่อย",
+        "id": "data"
+      }
+    ],
+    [
+      {
+        "stage": 11,
+        "title": "ขอเพิ่มในงานชิ้นแรก",
+        "id": "scope"
+      },
+      {
+        "stage": 31,
+        "title": "ขอบเขตระหว่างสองทีม",
+        "id": "scope"
+      },
+      {
+        "stage": 34,
+        "title": "แผนที่ใหญ่กว่าหลักฐาน",
+        "id": "scope"
+      },
+      {
+        "stage": 51,
+        "title": "สิ่งที่คุณต้องตัดสินใจรับ",
+        "id": "scope"
+      },
+      {
+        "stage": 63,
+        "title": "ของเพิ่มก่อนปล่อย",
+        "id": "scope"
+      },
+      {
+        "stage": 74,
+        "title": "ขอบเขตที่ต้องปิดก่อนจบ",
+        "id": "scope"
+      }
+    ],
+    [
+      {
+        "stage": 13,
+        "title": "คำถามที่พี่เลี้ยงยังไม่ว่าง",
+        "id": "mentorBusy"
+      },
+      {
+        "stage": 35,
+        "title": "หลักฐานก่อนถามอาจารย์",
+        "id": "mentorBusy"
+      },
+      {
+        "stage": 48,
+        "title": "รับผิดชอบเองครั้งแรก",
+        "id": "mentorBusy"
+      },
+      {
+        "stage": 75,
+        "title": "คู่มือที่คุณต้องเขียนให้รุ่นถัดไป",
+        "id": "mentorBusy"
+      }
+    ],
+    [
+      {
+        "stage": 18,
+        "title": "หยุดกลางการสาธิต",
+        "id": "demo"
+      },
+      {
+        "stage": 38,
+        "title": "นำเสนอแผนกับของที่ทำได้",
+        "id": "demo"
+      },
+      {
+        "stage": 50,
+        "title": "เดโมที่คุณเป็นคนนำ",
+        "id": "demo"
+      },
+      {
+        "stage": 64,
+        "title": "เมื่อทุกคนกำลังรอดู",
+        "id": "demo"
+      }
+    ],
+    [
+      {
+        "stage": 19,
+        "title": "รถเสียก่อนนัดร่วมทีม",
+        "id": "transport"
+      },
+      {
+        "stage": 53,
+        "title": "ไปทำงานนอกสถานที่เอง",
+        "id": "transport"
+      }
+    ],
+    [
+      {
+        "stage": 22,
+        "title": "ผู้ใช้ยังติดหลังแก้",
+        "id": "feedbackUser"
+      },
+      {
+        "stage": 47,
+        "title": "ตัวเลขกับเสียงผู้ใช้ไม่ตรงกัน",
+        "id": "feedbackUser"
+      },
+      {
+        "stage": 62,
+        "title": "อุปสรรคที่ทีมมองข้าม",
+        "id": "feedbackUser"
+      }
+    ],
+    [
+      {
+        "stage": 24,
+        "title": "ขอบเขตกับทีมใหม่",
+        "id": "worklife"
+      },
+      {
+        "stage": 45,
+        "title": "หน้าที่ที่เพิ่มโดยไม่ได้นัด",
+        "id": "worklife"
+      },
+      {
+        "stage": 69,
+        "title": "คืนก่อนเดโม",
+        "id": "worklife"
+      }
+    ],
+    [
+      {
+        "stage": 27,
+        "title": "ข้อตกลงเครดิตของสองทีม",
+        "id": "teammate"
+      },
+      {
+        "stage": 43,
+        "title": "ใครรับผิดชอบส่วนที่เพิ่ม",
+        "id": "teammate"
+      },
+      {
+        "stage": 59,
+        "title": "เครดิตของการแก้จุดเสี่ยง",
+        "id": "teammate"
+      },
+      {
+        "stage": 67,
+        "title": "การขอบคุณคนหลังฉาก",
+        "id": "teammate"
+      }
+    ]
+  ],
+  "mobile": {
+    "canvas": {
+      "x": 20,
+      "y": 449.484375,
+      "width": 350,
+      "height": 196.875
+    },
+    "desk": {
+      "x": 151.828125,
+      "y": 659.90625,
+      "width": 86.34375,
+      "height": 25
+    },
+    "hr": {
+      "x": 301.75,
+      "y": 623.90625,
+      "width": 45.5,
+      "height": 40
+    },
+    "deskCenterBelowCanvas": true,
+    "hrExtendsBelowCanvas": true
+  }
+}
