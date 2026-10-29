@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "buildHash": "b2149ded4effa75096bca82e02f20d951669f2e406b6645fa4d83172155e23a1",
+  "role": "game",
+  "round": 4,
+  "seed": 2704,
+  "batch": "batch7",
+  "care": true,
+  "policy": "mixed",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 196,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 3,
+    "energy": 51,
+    "stress": 0,
+    "sustainable": true,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "workCheckFailed",
+      "repairedWork",
+      "testEvidence",
+      "containedData",
+      "independentTrial",
+      "userEvidence"
+    ],
+    "history": 102
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

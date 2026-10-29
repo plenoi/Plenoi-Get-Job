@@ -44,13 +44,24 @@ Browser QAใช้ Playwright กับ Microsoft Edge ตาม pathในส�
 ## เผยแพร่และดูแล
 
 URLเซิร์ฟเวอร์: https://89.45.45.73/Plenoi-Get-Job/
+ซอร์สในเครื่อง: `C:\Plenoi-Get-Job` · private GitHub: `https://github.com/plenoi/Plenoi-Get-Job`
 
-จาก `/opt/ai-app/plenoi-get-job`:
+คำสั่งดูแลจาก `/opt/ai-app/plenoi-get-job` ใช้เฉพาะ Compose service `web` ของโครงการนี้:
 
 ```sh
-docker compose ps
-docker compose logs --tail=100 web
-docker compose up -d --build --no-deps web
+cd /opt/ai-app/plenoi-get-job
+sudo docker compose ps
+sudo docker compose logs --tail=100 web
+sudo docker compose up -d --build --no-deps web
 ```
 
-Composeเป็นโครงการแยก ใช้ proxy networkเดิม ไม่มีการเปิดพอร์ตโฮสต์ใหม่ ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและSSHอยู่ในไฟล์/ช่องทางที่ละเว้นจากGitและห้าม commit secrets.
+หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261029.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
+
+```sh
+cd /opt/ai-app/plenoi-get-job
+sudo tar -tzf previous-dist-20261029.tar.gz
+sudo tar -xzf previous-dist-20261029.tar.gz -C /opt/ai-app/plenoi-get-job
+sudo docker compose up -d --build --no-deps web
+```
+
+Compose เป็นโครงการแยก ใช้ proxy network เดิม ไม่มีการเปิดพอร์ตโฮสต์ใหม่ คำสั่งข้างต้นไม่ต้องหยุดหรือ prune โครงการอื่น และไม่เปลี่ยน proxy. Production smoke check ของ release ปัจจุบันผ่านแล้ว; ดูผลและเวลาตรวจใน `qa/results/deployment.json`. การตรวจนี้ยืนยันเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.

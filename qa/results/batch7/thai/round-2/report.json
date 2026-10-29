@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "buildHash": "b2149ded4effa75096bca82e02f20d951669f2e406b6645fa4d83172155e23a1",
+  "role": "thai",
+  "round": 2,
+  "seed": 2902,
+  "batch": "batch7",
+  "care": true,
+  "policy": "repair",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 194,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 3,
+    "energy": 49,
+    "stress": 0,
+    "sustainable": true,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "unspokenConflict",
+      "testEvidence",
+      "containedData",
+      "workCheckFailed",
+      "repairedWork",
+      "missingHandoff",
+      "repairedDeadline",
+      "publicArgument",
+      "independentTrial",
+      "userEvidence",
+      "unreportedBlock",
+      "blockedTeam"
+    ],
+    "history": 100
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}
