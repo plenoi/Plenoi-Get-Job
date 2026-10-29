@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "buildHash": "c85f054997843d75cd41678ed6e2bdec36b03bff9ac391c726622cbb18b1bdc6",
+  "role": "student",
+  "round": 5,
+  "seed": 1805,
+  "batch": "batch4",
+  "care": false,
+  "policy": "repair",
+  "method": "Headless Edge scripted browser path. Synthetic profile fixture; not a human user study.",
+  "screensWithImages": 188,
+  "summary": {
+    "mode": "ending",
+    "completed": 80,
+    "visits": 4,
+    "exams": {
+      "proposal": 100,
+      "final": 100
+    },
+    "tier": 2,
+    "energy": 18,
+    "stress": 25,
+    "sustainable": false,
+    "facts": [
+      "gossip",
+      "repairedRelation",
+      "technicalEvidence",
+      "unspokenConflict",
+      "testEvidence",
+      "containedData",
+      "workCheckFailed",
+      "repairedBug",
+      "missingHandoff",
+      "repairedDeadline",
+      "untestedWork",
+      "userEvidence",
+      "publicArgument",
+      "blockedTeam",
+      "unreportedBlock"
+    ],
+    "history": 94
+  },
+  "pageErrors": [],
+  "nonGETRequests": [],
+  "findings": []
+}

@@ -1,0 +1,115 @@
+{
+  "buildHash": "c85f054997843d75cd41678ed6e2bdec36b03bff9ac391c726622cbb18b1bdc6",
+  "pageErrors": [],
+  "wrongPatch": {
+    "fixture": "ตะกร้าคิดเงินผิด",
+    "code": "function total(price, qty) {\n  return price + qty; // แก้บรรทัดนี้\n}\n// total(60, 8) ต้องได้ 480",
+    "qualityBefore": 50,
+    "qualityAfter": 47,
+    "expertiseBefore": 30,
+    "expertiseAfter": 30,
+    "qualityAssessmentBefore": 30,
+    "qualityAssessmentAfter": 29,
+    "feedback": "",
+    "fact": "workCheckFailed"
+  },
+  "deadline": {
+    "stage": 2,
+    "choice": "C\nข้ามการตรวจ ขั้นตอนเริ่มใช้งาน เพื่อให้ส่งทัน",
+    "facts": [
+      "untestedDelivery"
+    ],
+    "followup": "CAMT WIL CENTER · เดือน 1\nติดตามเหตุที่ยังค้าง · บั๊กกลับมาตอนคนอื่นใช้\n😐 พี่เมย์ · 50\n😠 พี่ต้น · 47\n😐 ฟ้า · 50\n😐 พี่ลิน · 50\nก้าวแรกและสิทธิ์ระบบ\nทุกการเลือกมีผลต่อเรื่องราว\nพี่เมย์ · ทีมจำลอง\n\nผลตรวจงานยังไม่ตรงเกณฑ์ เพื่อนต้องหยุดรอ ทีมต้องแยกสาเหตุจากหลักฐานก่อนนำไปใช้ ต่อเนื่องจาก: สองงานแรกชนกัน · ข้ามการตรวจ ขั้นตอนเริ่มใช้งาน เพื่อให้ส่งทัน\n\nA\nขอเพื่อนช่วยหาสาเหตุและแจ้งเวลาตรวจ\nB\nแก้เฉพาะตัวอย่างที่ผู้ใช้รายนี้เจอ\nC\nทำซ้ำด้วยข้อมูลเดิม แก้แล้วเพิ่ม regression test\nD\nบอกว่าเครื่องคุณใช้งานได้\nค่าพลังและความสัมพันธ์\nชีวิต\nประเมิน 14 ด้าน\nคนในทีม\nชีวิตประจำวัน\nHealthy · สุขภาพ\n90/100\nWealth · เงินคงเหลือ\n1,500 ฿\nHappiness · ความสุข\n"
+  },
+  "ethics": {
+    "title": "HR ขอทบทวนเหตุที่กระทบความไว้ใจ",
+    "text": "พี่ลินขอทบทวนการอ้างผลเดโมที่ยังไม่ได้พิสูจน์ คุณจะชี้แจงและรับผิดชอบอย่างไร?",
+    "choices": [
+      "A\nให้คนอื่นรับผิดแทนโดยไม่เปิดหลักฐาน",
+      "B\nเล่าเฉพาะส่วนที่ทำให้ตัวเองดูดี",
+      "C\nเรียงข้อเท็จจริง ยอมรับส่วนที่ทำ และตกลงวิธีแก้",
+      "D\nขอคนกลางช่วยตรวจหลักฐานก่อนชี้แจง"
+    ],
+    "afterFacts": [
+      "fakeDemo",
+      "repairedConduct"
+    ]
+  },
+  "tension": {
+    "title": "ความตึงเครียดเริ่มขวางงาน",
+    "text": "พี่ลินกับคุณเริ่มคุยงานกันลำบาก ข้อความสั้น ๆ ถูกตีความในแง่ร้าย คุณจะเริ่มแก้อย่างไร?",
+    "choices": [
+      "A\nขอโทษพฤติกรรมที่ทำจริงและเสนอวิธีแก้",
+      "B\nชวนคุยข้อเท็จจริงพร้อมคนกลาง",
+      "C\nหลีกเลี่ยงการติดต่อทั้งหมด",
+      "D\nประชดว่าอีกฝ่ายอ่อนไหวเกินไป"
+    ],
+    "before": 70,
+    "after": {
+      "hrTension": 67,
+      "delta": "ความเครียด -4 → 16\nCommunication +3 → 33\nTeam Work +1 → 31\nManner +2 → 57\nHappiness +3 → 68\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nพี่ลิน +3 → 53\nพี่ลิน · ความไว้ใจ +3 → 53\nพี่ลิน · ความเป็นมิตร +2 → 52\nพี่ลิน · ความเคารพ +2 → 52\nพี่ลิน · ความผูกพัน +1 → 26\nพี่ลิน · ความตึงเครียด -3 → 67"
+    }
+  },
+  "creativeTrial": {
+    "title": "เปิดทางให้ต้นแบบของคุณ",
+    "text": "ทีมให้คุณลองต้นแบบทางเลือกหนึ่งแบบ โดยต้องพิสูจน์ว่ามันช่วยผู้ใช้จริง",
+    "choices": [
+      {
+        "i": "3",
+        "t": "A\nบอกว่าทำตามเอกสารเดิมครบแล้ว"
+      },
+      {
+        "i": "0",
+        "t": "B\nให้ผู้ใช้ลองงานหนึ่งชิ้นแล้วสังเกตขั้นที่ติด"
+      },
+      {
+        "i": "2",
+        "t": "C\nเปลี่ยนหน้าตาทั้งหมดตามความรู้สึก"
+      },
+      {
+        "i": "1",
+        "t": "D\nเทียบข้อมูลการใช้งานก่อนถามเพิ่ม"
+      }
+    ],
+    "before": {
+      "planning": 30,
+      "motivation": 45,
+      "expertise": 30,
+      "problemSolving": 30,
+      "qualityWork": 30,
+      "creativeThinking": 60,
+      "teamwork": 30,
+      "integrity": 60,
+      "punctuality": 50,
+      "adaptation": 55,
+      "manner": 55,
+      "communication": 30,
+      "assertiveness": 30,
+      "systematicThinking": 30
+    },
+    "after": {
+      "assessment": {
+        "planning": 33,
+        "motivation": 47,
+        "expertise": 30,
+        "problemSolving": 31,
+        "qualityWork": 31,
+        "creativeThinking": 60,
+        "teamwork": 31,
+        "integrity": 60,
+        "punctuality": 52,
+        "adaptation": 55,
+        "manner": 55,
+        "communication": 31,
+        "assertiveness": 30,
+        "systematicThinking": 30
+      },
+      "delta": "คุณภาพงาน +4 → 54\nพลังงาน -3 → 77\nWorking Quality +1 → 31\nProblem Solving +1 → 31\nCommunication +1 → 31\nTeam Work +1 → 31\nMotivation +2 → 47\nPlanning +3 → 33\nPunctual +2 → 52\nHappiness +1 → 66\nTired +3 → 23\nHungry +1 → 21\nThirsty +2 → 17\nBored +1 → 16\nSleepy +1 → 21\nฟ้า +1 → 51\nพี่เมย์ +1 → 51\nฟ้า · ความไว้ใจ +1 → 51\nฟ้า · ความเป็นมิตร +1 → 51\nฟ้า · ความเคารพ +1 → 51\nฟ้า · ความผูกพัน +1 → 26\nฟ้า · ความตึงเครียด -1 → 9\nพี่เมย์ · ความไว้ใจ +1 → 51\nพี่เมย์ · ความเป็นมิตร +1 → 51\nพี่เมย์ · ความเคารพ +1 → 51\nพี่เมย์ · ความผูกพัน +1 → 26\nพี่เมย์ · ความตึงเครียด -1 → 9"
+    }
+  },
+  "mcq": {
+    "oracleSelectedAnswer": true,
+    "feedback": "แนวทางนี้ตรงโจทย์",
+    "testResults": 0
+  }
+}
