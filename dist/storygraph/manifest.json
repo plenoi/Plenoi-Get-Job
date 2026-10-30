@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "sourceHash": "2410e67dffdd4e5eba1eb6c9e5db62fb852caaa6cec396c6605e58461f5e6dc9",
+  "version": 3,
+  "sourceHash": "41dce5fc57520ef62fb6644026ade26daad3721091e396e886489567303a6139",
   "nodes": 161000,
   "storyNodes": 160000,
   "endingLeaves": 1000,
@@ -13,6 +13,16 @@
     "workContext": 5,
     "pressure": 2,
     "openCausalChain": 5
+  },
+  "eventLibrary": {
+    "authoredTemplates": 100,
+    "authoredTemplatesInCanonicalGraph": 78,
+    "compiledNodeDescriptors": 160000,
+    "authoredEventDescriptorVariants": 160000,
+    "fixedGateDescriptors": 0,
+    "legacyFallbackDescriptors": 0,
+    "variantDefinition": "Each graph node stores one concrete canonical descriptor. An authored event descriptor is a state variant of an authored template, not a separately authored script.",
+    "descriptorCountCheck": "authoredEventDescriptorVariants + fixedGateDescriptors + legacyFallbackDescriptors = compiledNodeDescriptors"
   },
   "format": "UTF-8 JSON Lines, gzip",
   "data": "nodes.jsonl.gz",
@@ -28,6 +38,6 @@
   "renderer": "../sim-art.js",
   "runtimeRules": "../sim-core.js",
   "terminalSelector": "outcome-v2",
-  "description": "Explicit compiled story-state DAG, not 161000 independently written scenes. Nodes share authored scenarios; each node has its own state/scene descriptor and four causal transitions. Full numeric history is evaluated by terminal guards.",
-  "bytes": 19280984
+  "description": "Explicit compiled story-state DAG. Each node records one concrete canonical descriptor selected from authored event templates (or a fixed conditional gate); descriptors are state variants, not unique scripts. Full numeric history is evaluated by terminal guards.",
+  "bytes": 68900602
 }
