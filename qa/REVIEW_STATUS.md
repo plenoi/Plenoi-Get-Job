@@ -1,6 +1,6 @@
 # Review status — 2026-10-30, Asia/Bangkok
 
-**The two-role final review completed seven rounds with no scoped finding left open.** The prior four-role Batch 7 record below remains historical. The final Round 7 notes and limits are in [Final gameplay and scene review](FINAL_TEST_ROUNDS.md). A post-cache-bump engineering route completed all 80 decisions, four advisor visits, and both exams; it rendered 188 image frames with no page errors or non-GET requests on build `4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a`.
+**The final Game Designer and Storyboard Designer reviews are clean within their scopes; current release `f4f512e06a98c8f3b540dcdb0f39d9e82b76ac85` is live.** The first review loop completed seven rounds; follow-up batches corrected the CAMT instructor cast, interview art, and UX retry progression. The final Game Designer batch has five current-build JSON route reports; the Storyboard Designer completed five guided visual checks on the locked source, with screenshots but no per-round JSON. Review scope and limits are in [Final gameplay and scene review](FINAL_TEST_ROUNDS.md). A fresh engineering route completed all 80 decisions, four advisor visits, and both exams; it rendered 188 image frames with no page errors or non-GET requests on build `63691929ca8ed848ea9b9e6012136a785603df506748d478e9b91cb164e944d8`.
 
 ## Review history
 
@@ -12,7 +12,7 @@
 - **Batch 6:** the Thai teacher and novel editor found the risk-check option's communication/teamwork rationale unclear; the game reviewer considered the inference plausible and the student found no additional issue. Wording was clarified without changing effects. See [Batch 6 fixes](BATCH6_FIXES.md).
 - **Batch 7:** all four roles completed five fresh routes and the focused changed-choice check, with scoped clean results.
 
-The two-role review is complete for its stated sample and checks. Release `4a6bb1e65257bd2b3e5dd9f5d114142f3369db21` is live at [the HTTPS game URL](https://89.45.45.73/Plenoi-Get-Job/). Production verification passed on 2026-10-30 11:01 Asia/Bangkok: 15 assets matched byte-for-byte, app health returned 200, sibling `/mmit-bird/` kept its 302 response, and browser checks passed with zero page errors. The app container is healthy; Caddy and both sibling containers stayed running with restart count zero. Details: [`qa/results/deployment.json`](results/deployment.json). This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the review scope and limits.
+Production verification passed on 2026-10-30 13:23 Asia/Bangkok: 15 assets matched byte-for-byte, app health returned 200, sibling `/mmit-bird/` kept its 302 response, and browser checks passed with zero page errors. The app container is healthy; Caddy and both sibling containers stayed running with restart count zero. Details: [`qa/results/deployment.json`](results/deployment.json). This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the review scope and limits.
 
 ## Limits
 

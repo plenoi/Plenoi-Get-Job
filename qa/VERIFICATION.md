@@ -1,14 +1,14 @@
 # Verification handoff — 2026-10-30
 
-## Current release candidate
+## Current deployed release
 
-- Current browser regression build SHA-256: `4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a`.
-- `npm test` reports 18 core checks passed; the story archive contains 161,000 nodes, 640,000 choices, and 1,000 ending leaves; practical training has 41 lesson templates.
-- After the asset cache-version update, the final synthetic browser route completed 80 decisions, four advisor visits and both exams, rendered 188 image frames, and reported zero page errors and zero non-GET requests. Report: `qa/results/game-programmer-round8/game/round-8/report.json`.
-- The two-role Game Designer and Storyboard Designer loop ran seven rounds and closed with no scoped finding. This is AI-assisted scripted review, not human playtesting; see `qa/FINAL_TEST_ROUNDS.md` for the scope and limits.
-- Runtime commit `4a6bb1e65257bd2b3e5dd9f5d114142f3369db21` is live. Production verification byte-matched all 15 assets, confirmed app health 200, sibling `/mmit-bird/` status 302, and passed office/choice-feedback/story-graph browser checks with zero page errors. App health is `healthy`; Caddy and both sibling containers retained their prior start times and restart count zero. See `qa/results/deployment.json`.
+- Current browser regression build SHA-256: `63691929ca8ed848ea9b9e6012136a785603df506748d478e9b91cb164e944d8`.
+- `npm test` reports 19 core checks passed; the story archive contains 161,000 nodes, 640,000 choices, and 1,000 ending leaves; practical training has 41 lesson templates.
+- A fresh synthetic browser route completed 80 decisions, four advisor visits and both exams, rendered 188 image frames, and reported zero page errors and zero non-GET requests. Report: `qa/results/final-deploy/game/round-1/report.json`.
+- Final review: five current-build Game Designer JSON routes passed; Storyboard Designer completed five guided visual routes on the locked source, with screenshots but without per-route JSON. This is AI-assisted review, not human playtesting; see `qa/FINAL_TEST_ROUNDS.md` for scope and limits.
+- Runtime commit `f4f512e06a98c8f3b540dcdb0f39d9e82b76ac85` is live. Production verification byte-matched all 15 assets, confirmed app health 200, sibling `/mmit-bird/` status 302, and passed office/choice-feedback/story-graph browser checks with zero page errors. App health is `healthy`; Caddy and both sibling containers remain running with restart count zero. See `qa/results/deployment.json`.
 
-## Frozen build and independent review
+## Historical Batch 7 frozen build and independent review
 
 - Browser build SHA-256 (same input formula as `qa/browser-tests.js`): `b2149ded4effa75096bca82e02f20d951669f2e406b6645fa4d83172155e23a1`.
 - Normalized `sim-core.js` source SHA-256: `2410e67dffdd4e5eba1eb6c9e5db62fb852caaa6cec396c6605e58461f5e6dc9`.

@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "commit": "4a6bb1e65257bd2b3e5dd9f5d114142f3369db21",
-  "browserBuildHash": "4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a",
+  "commit": "f4f512e06a98c8f3b540dcdb0f39d9e82b76ac85",
+  "browserBuildHash": "63691929ca8ed848ea9b9e6012136a785603df506748d478e9b91cb164e944d8",
   "url": "https://89.45.45.73/Plenoi-Get-Job/",
   "byteVerifiedAssets": 15,
   "appHealth": 200,
@@ -16,6 +16,7 @@
     "mmit-bird-web-1": { "state": "running", "health": "healthy", "restartCount": 0 },
     "mmit-bird-worker-1": { "state": "running", "health": "healthy", "restartCount": 0 }
   },
-  "distBackup": "previous-dist-20261030-0357.tar.gz",
-  "checkedAt": "2026-10-30T04:01:12.762Z"
+  "distBackup": "previous-dist-20261030-0610.tar.gz",
+  "transferArchiveSha256": "1a5aee3c7135d6648e0a58c8a9b4a8cc5a62b5f0cdb2ff5f05a3869817a8e5e7",
+  "checkedAt": "2026-10-30T06:23:58.730Z"
 }

@@ -17,6 +17,7 @@ npm start
 - PDF CV อ่านในเบราว์เซอร์ด้วย PDF.jsที่เสิร์ฟจากเว็บเดียวกัน ไม่มี API ส่ง CV หรือคำตอบขึ้นเซิร์ฟเวอร์ ข้อมูลอยู่ในหน่วยความจำของแท็บ
 - การจับคู่งานเทียบหลักฐานเฉพาะทักษะและเทคโนโลยี แสดงสิ่งที่ตรง สิ่งที่ขาด และข้อความอ้างอิง ไม่ใช่คะแนนโอกาสได้รับงานจริงและไม่มีฐานคะแนนให้ทุกตำแหน่ง
 - CAMT MMIT มีโจทย์ปฏิบัติ JavaScript, SQL, UX, Testing, ข้อมูล ความปลอดภัย การสื่อสาร และการวางแผน รวม41แม่แบบพร้อมตัวอย่างที่เปลี่ยนได้ แพตช์ที่พิมพ์ตรวจด้วยตัวแปลนิพจน์จำกัดขอบเขต ไม่ใช่ JavaScript compilerทั่วไป
+- ศูนย์ฝึกแสดงผู้สอน AI ล้อชื่อสาธารณะจากรายชื่ออาจารย์ MMIT มีภาพ Pixel Art ที่ออกแบบเป็นตัวละครใหม่และชื่อ/สกิลคงที่ก่อนและหลังสัมภาษณ์ โดยผูกบทบาทสมมุติกับหัวข้อที่หน้า [หลักสูตร CAMT MMIT](https://www.camt.cmu.ac.th/หลักสูตร-การรับสมัคร/mmit-สาขาวิชาการจัดการสมัย/) ระบุ เช่น การจัดการโครงการ การประยุกต์เทคโนโลยีดิจิทัล การจัดการข้อมูล กระบวนการธุรกิจ และการสื่อสาร การจับคู่ชื่อกับทักษะเป็นเรื่องแต่ง ไม่ใช่ข้อกล่าวอ้างความเชี่ยวชาญของอาจารย์จริง
 - ค่าประเมิน14ด้าน ค่าชีวิต8ด้าน และความสัมพันธ์รายคน5มิติเป็นสถานะจริง การตอบและการทำงานส่งผลต่อค่าเหล่านี้พร้อมภาพและผลตอบกลับทันที
 - เลือกคุยกับพี่เลี้ยง หัวหน้า เพื่อน และHR บทสนทนาอาจเปิดเหตุแทรก ปัญหางานค้างอยู่เป็นคิวและไม่ถูกลบเมื่อมีเรื่องใหม่
 - มีเงื่อนไขเปิดเหตุการณ์จากความหิว น้ำ การพัก ความเบื่อ เงิน ทักษะ จริยธรรม และความสัมพันธ์ รวม15กฎหลัก
@@ -57,13 +58,13 @@ sudo docker compose logs --tail=100 web
 sudo docker compose up -d --build --no-deps web
 ```
 
-หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261030-0357.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
+หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261030-0610.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
 
 ```sh
 cd /opt/ai-app/plenoi-get-job
-sudo tar -tzf previous-dist-20261030-0357.tar.gz
-sudo tar -xzf previous-dist-20261030-0357.tar.gz -C /opt/ai-app/plenoi-get-job
+sudo tar -tzf previous-dist-20261030-0610.tar.gz
+sudo tar -xzf previous-dist-20261030-0610.tar.gz -C /opt/ai-app/plenoi-get-job
 sudo docker compose up -d --build --no-deps web
 ```
 
-Release `4a6bb1e65257bd2b3e5dd9f5d114142f3369db21` ใช้ browser build SHA-256 `4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a`. Production smoke check ผ่าน: 15 assets ตรงกันทุก byte, health 200, sibling `/mmit-bird/` ยังคงตอบ 302, office/choice feedback/story graph เปิดได้, ไม่มี browser page errors และไม่มี container อื่นถูก restart. ดูเวลาตรวจและรายละเอียดใน `qa/results/deployment.json`. การตรวจนี้ครอบคลุมเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.
+Release `f4f512e06a98c8f3b540dcdb0f39d9e82b76ac85` ใช้ browser build SHA-256 `63691929ca8ed848ea9b9e6012136a785603df506748d478e9b91cb164e944d8`. Production smoke check ผ่าน: 15 assets ตรงกันทุก byte, health 200, sibling `/mmit-bird/` ยังคงตอบ 302, office/choice feedback/story graph เปิดได้, ไม่มี browser page errors และไม่มี container อื่นถูก restart. ดูเวลาตรวจและรายละเอียดใน `qa/results/deployment.json`. การตรวจนี้ครอบคลุมเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.
