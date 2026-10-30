@@ -950,6 +950,479 @@
     }
   },
   {
+    "id": "powerOutage",
+    "when": "Heavy rain may interrupt electricity",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "powerOutage",
+      "title": "ฝนกระหน่ำแล้วไฟดับทั้งชั้น",
+      "text": "ไฟดับทำให้เครื่องและเครือข่ายหยุดพร้อมกัน งานออนไลน์ที่ยังไม่บันทึกต้องรอไฟกลับ",
+      "location": "office",
+      "options": [
+        {
+          "text": "ตรวจไฟล์ออฟไลน์และแจ้งเวลาที่ต้องเลื่อน",
+          "reply": "ทีมรู้ว่าส่วนใดยังติดระบบและจัดลำดับใหม่ได้",
+          "effect": {
+            "stats": {
+              "reliability": 2
+            },
+            "rel": {
+              "lead": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": 2,
+            "flag": "rainOutage",
+            "general": {
+              "happiness": 1
+            },
+            "assessment": {
+              "planning": 2,
+              "communication": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ย้ายไปทำงานเอกสารหรือ test case ที่บันทึกไว้",
+          "reply": "เวลาสะดุดถูกใช้กับงานที่ไม่ต้องพึ่งระบบ",
+          "effect": {
+            "stats": {
+              "energy": -2
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "offlineWork",
+            "general": {
+              "bored": -2
+            },
+            "assessment": {
+              "planning": 2,
+              "qualityWork": 1
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "เปิดฮอตสปอตส่วนตัวแล้วส่งข้อมูลต่อทันที",
+          "reply": "งานเดินต่อได้ แต่ต้องตรวจสิทธิ์และความปลอดภัยของการเชื่อมต่อ",
+          "effect": {
+            "stats": {
+              "stress": 2
+            },
+            "rel": {
+              "lead": -1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": 3,
+            "flag": "unapprovedHotspot",
+            "general": {
+              "wealth": -40
+            },
+            "assessment": {
+              "integrity": -1
+            }
+          },
+          "rank": 1
+        },
+        {
+          "text": "รอหน้าจอโดยไม่แจ้งทีม",
+          "reply": "ทีมอื่นยังคิดว่างานกำลังเดินและเริ่มวางแผนต่อไม่ได้",
+          "effect": {
+            "stats": {
+              "reliability": -3,
+              "stress": 2
+            },
+            "rel": {
+              "lead": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": 2,
+            "flag": "blockedByOutage",
+            "general": {
+              "bored": 5
+            },
+            "assessment": {
+              "communication": -2
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "lateArrival",
+    "when": "Arrived after 08:45",
+    "once": false,
+    "chance": 100,
+    "scene": {
+      "id": "lateArrival",
+      "title": "มาถึงหลังเวลาเริ่มงาน",
+      "text": "คุณมาถึงช้ากว่าเวลาเริ่มงาน ทีมกำลังรอข้อมูลก่อนเริ่มงาน",
+      "location": "office",
+      "options": [
+        {
+          "text": "แจ้งเวลาถึงจริง ขอโทษ และส่งสถานะงานค้าง",
+          "reply": "หัวหน้าจัดลำดับใหม่ได้ แม้บันทึกเวลามาสายยังคงอยู่",
+          "effect": {
+            "stats": {
+              "reliability": 1
+            },
+            "rel": {
+              "lead": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -1
+            },
+            "assessment": {
+              "punctuality": -2,
+              "communication": 2
+            }
+          },
+          "rank": 2
+        },
+        {
+          "text": "ขอเริ่มจากงานที่ไม่บล็อกคนอื่นก่อน",
+          "reply": "ทีมใช้เวลารอไปทำส่วนอื่นและคุณรับผิดชอบเวลาที่มาถึง",
+          "effect": {
+            "stats": {},
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {},
+            "assessment": {
+              "planning": 2,
+              "punctuality": -1
+            }
+          },
+          "rank": 2
+        },
+        {
+          "text": "บอกว่ามาถึงตรงเวลาและแก้บันทึกภายหลัง",
+          "reply": "ข้อมูลเวลาไม่ตรงทำให้ความไว้ใจลดลง",
+          "effect": {
+            "stats": {
+              "reliability": -4
+            },
+            "rel": {
+              "lead": -3
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "happiness": -2
+            },
+            "assessment": {
+              "integrity": -4,
+              "punctuality": -4
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "เข้าประชุมกลางคันโดยไม่ถามว่าทีมตกลงอะไรแล้ว",
+          "reply": "คุณพลาดบริบทและต้องย้อนถามจนเริ่มงานช้ากว่าเดิม",
+          "effect": {
+            "stats": {
+              "quality": -1
+            },
+            "rel": {
+              "lead": -1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "bored": 2
+            },
+            "assessment": {
+              "communication": -2,
+              "punctuality": -2
+            }
+          },
+          "rank": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "typhoonSafety",
+    "when": "Typhoon warning",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "typhoonSafety",
+      "title": "ประกาศเตือนพายุเข้าเชียงใหม่",
+      "text": "ศูนย์แจ้งเตือนให้หยุดเดินทางและย้ายไปจุดปลอดภัย งานที่เหลือต้องส่งต่อโดยไม่เสี่ยงฝ่าพายุ",
+      "location": "office",
+      "options": [
+        {
+          "text": "ทำตามคำสั่งอพยพและเช็กชื่อกับทีม",
+          "reply": "ทุกคนปลอดภัยและหัวหน้าจัดแผนทำงานต่อจากระยะไกล",
+          "effect": {
+            "stats": {
+              "stress": -2,
+              "reliability": 1
+            },
+            "rel": {
+              "lead": 2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 2,
+              "happiness": 1
+            },
+            "assessment": {
+              "planning": 2,
+              "teamwork": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ช่วยตรวจว่าทุกคนได้รับแจ้งก่อนออกจากพื้นที่",
+          "reply": "ทีมยืนยันคนครบโดยไม่กลับเข้าเขตอันตราย",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "peer": 2,
+              "mentor": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 1
+            },
+            "assessment": {
+              "communication": 2,
+              "teamwork": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ฝ่าฝนกลับไปเก็บอุปกรณ์บริษัท",
+          "reply": "อุปกรณ์ไม่สำคัญกว่าความปลอดภัย การเดินทางเพิ่มความเสี่ยง",
+          "effect": {
+            "stats": {
+              "stress": 5,
+              "reliability": -2
+            },
+            "rel": {
+              "lead": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": -5,
+              "happiness": -3
+            },
+            "assessment": {
+              "systematicThinking": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "ปิดแจ้งเตือนแล้วทำงานต่อในอาคาร",
+          "reply": "คุณยังอยู่ในพื้นที่ที่ถูกสั่งให้ออกจากอาคาร",
+          "effect": {
+            "stats": {
+              "stress": 4
+            },
+            "rel": {
+              "lead": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": -4
+            },
+            "assessment": {
+              "planning": -3
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "earthquakeSafety",
+    "when": "Earthquake",
+    "once": true,
+    "chance": 100,
+    "scene": {
+      "id": "earthquakeSafety",
+      "title": "พื้นสั่นระหว่างประชุม",
+      "text": "แรงสั่นทำให้จอและของบนชั้นขยับ ทุกคนต้องทำตามขั้นตอนความปลอดภัยก่อนคิดถึงงาน",
+      "location": "office",
+      "options": [
+        {
+          "text": "หมอบ หลบใต้โต๊ะที่แข็งแรง และยึดที่กำบัง",
+          "reply": "คุณรอจนการสั่นหยุดแล้วฟังประกาศอพยพ",
+          "effect": {
+            "stats": {
+              "stress": -1
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 1
+            },
+            "assessment": {
+              "adaptation": 2,
+              "systematicThinking": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "ออกตามเส้นทางหนีไฟหลังแรงสั่นหยุดและเช็กชื่อทีม",
+          "reply": "ทุกคนไปรวมจุดปลอดภัยโดยไม่ใช้ลิฟต์",
+          "effect": {
+            "stats": {},
+            "rel": {
+              "lead": 1
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": 1
+            },
+            "assessment": {
+              "planning": 2,
+              "teamwork": 2
+            }
+          },
+          "rank": 3
+        },
+        {
+          "text": "วิ่งลงบันไดทันทีระหว่างของยังสั่น",
+          "reply": "การรีบโดยไม่ดูสภาพรอบตัวทำให้เสี่ยงล้มและขวางทาง",
+          "effect": {
+            "stats": {
+              "stress": 3
+            },
+            "rel": {},
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": -3
+            },
+            "assessment": {
+              "adaptation": -2
+            }
+          },
+          "rank": 0
+        },
+        {
+          "text": "ย้อนกลับไปเอาโน้ตบุ๊กก่อนอพยพ",
+          "reply": "ทรัพย์สินรอได้ แต่การย้อนเข้าเขตเสี่ยงทำให้ทีมต้องตามหา",
+          "effect": {
+            "stats": {
+              "stress": 3
+            },
+            "rel": {
+              "peer": -2
+            },
+            "context": [
+              0,
+              0,
+              0
+            ],
+            "chain": null,
+            "flag": "",
+            "general": {
+              "healthy": -4
+            },
+            "assessment": {
+              "planning": -2,
+              "teamwork": -2
+            }
+          },
+          "rank": 0
+        }
+      ]
+    }
+  },
+  {
     "id": "advancedTask",
     "when": "Expertise >= 60 AND Problem Solving >= 60 AND Working Quality >= 55",
     "once": true,

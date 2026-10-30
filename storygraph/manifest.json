@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "sourceHash": "41dce5fc57520ef62fb6644026ade26daad3721091e396e886489567303a6139",
+  "sourceHash": "959e5125d0e2bd83641f6bacad241403bafc1c65f2af8a496fb555a9df5baf08",
   "nodes": 161000,
   "storyNodes": 160000,
   "endingLeaves": 1000,
@@ -18,8 +18,8 @@
     "authoredTemplates": 100,
     "authoredTemplatesInCanonicalGraph": 78,
     "compiledNodeDescriptors": 160000,
-    "authoredEventDescriptorVariants": 160000,
-    "fixedGateDescriptors": 0,
+    "authoredEventDescriptorVariants": 140580,
+    "fixedGateDescriptors": 19420,
     "legacyFallbackDescriptors": 0,
     "variantDefinition": "Each graph node stores one concrete canonical descriptor. An authored event descriptor is a state variant of an authored template, not a separately authored script.",
     "descriptorCountCheck": "authoredEventDescriptorVariants + fixedGateDescriptors + legacyFallbackDescriptors = compiledNodeDescriptors"
@@ -27,7 +27,7 @@
   "format": "UTF-8 JSON Lines, gzip",
   "data": "nodes.jsonl.gz",
   "conditionalDefinitions": "gates.json",
-  "gateRules": 15,
+  "gateRules": 19,
   "endingAxes": {
     "outcome": 5,
     "workSummaryTheme": 5,
@@ -39,5 +39,5 @@
   "runtimeRules": "../sim-core.js",
   "terminalSelector": "outcome-v2",
   "description": "Explicit compiled story-state DAG. Each node records one concrete canonical descriptor selected from authored event templates (or a fixed conditional gate); descriptors are state variants, not unique scripts. Full numeric history is evaluated by terminal guards.",
-  "bytes": 68900602
+  "bytes": 83786480
 }

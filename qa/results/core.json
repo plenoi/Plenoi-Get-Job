@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checks": 23,
+  "checks": 27,
   "names": [
     "Changed front-end assets have bumped cache versions",
     "CV skill evidence separates job families",
@@ -24,7 +24,11 @@
     "Threshold gates link to explicit scene choices and actual next nodes",
     "Exactly one thousand distinct ending leaves round trip",
     "Specialist job titles are not interchangeable with related broad CVs",
-    "CAMT MMIT fictional coaches are sourced, visible by domain, and visually distinct"
+    "CAMT MMIT fictional coaches are sourced, visible by domain, and visually distinct",
+    "Calendar spans ten monthly chapters on unique weekdays with stable weather",
+    "Overtime carries sleep debt into a late arrival and creates a distinct dated event variant",
+    "Rain outage and severe hazards open coherent safety/continuity choices",
+    "Ten seeded reviewer routes have disjoint event-instance identities"
   ],
   "nodeCount": 161000,
   "storyNodes": 160000,

@@ -14,6 +14,18 @@ The named AI cast retains separate relationships. Talking uses an action budget 
 
 Each action displays its signed metric/relationship changes, an illustrated reaction and one explanation. The hub, lessons, interview, feedback, advisor reports, exams and endings all render a scene. Main character clothing, hair and color use the player profile throughout the v2 renderer.
 
+## Calendar, clock, weather and work recovery
+
+The simulation starts on 1 June 2026 (shown as 1 June 2569 BE) and moves through ten real calendar months. The 80 major work scenes fall on eight selected weekdays per month; routine work between those story days is compressed. Every work scene and feedback card shows its simulated date, check-in, current time, expected/actual checkout and seeded weather. The same date keeps the same weather. The Pixel Art scene uses the same date, time, light and weather values.
+
+Rain can delay the commute. Heavy rain or storms can trigger a power interruption; offline work, safe handoff and waiting all have different effects on unfinished work and the causal chain. Typhoon and earthquake gates are rare seeded interruptions; safe evacuation and shelter are rated as responsible decisions. They do not punish the player merely for following safety guidance.
+
+When a chosen work path leaves a task unfinished, an end-of-day decision offers four choices: report carryover and leave on time, request one approved overtime hour, rescope/handoff with the mentor, or continue late without telling the team. Overtime can reduce unfinished work and adds simulated pay, but raises sleep debt; sustained late work can produce a delayed arrival and a recorded punctuality/trust consequence. Normal rest recovers fatigue. The system records work dates, check-in/out, weather and overtime in the run summary.
+
+The attached *Theory of Fun* excerpt (51 slide-like pages) informed the design as a set of testable heuristics: let players learn recognizable patterns, vary their context so mastery does not become repetition, keep feedback causal so surprises do not feel like noise, and avoid one dominant overtime/choice strategy. It is a heuristic review, not proof of fun or a substitute for student playtesting.
+
+Each event encounter has a variant identity built from the run seed, authored root, date/time, weather, causal chain and recent choices. Ten distinct test routes can therefore have disjoint **event instances** even though they draw from the shared 100 authored roots. This does not claim that every encounter has independently written prose or an individually hand-painted illustration.
+
 ## Explicit story-state graph
 
 `storygraph/nodes.jsonl.gz` contains 161,000 explicit records: 160,000 context-specific graph descriptors and 1,000 ending leaves. There are 80 layers × 2,000 compact context states. Each story node has four labeled choices, effects, feedback, one concrete baseline scene descriptor and outgoing target. State dimensions are job family, current team mood, work situation, pressure and open causal-chain type. `story-map.html` inspects nodes and renders their descriptor; the large data file is not loaded into the normal game.
