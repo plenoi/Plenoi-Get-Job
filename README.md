@@ -58,13 +58,13 @@ sudo docker compose logs --tail=100 web
 sudo docker compose up -d --build --no-deps web
 ```
 
-หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261030-0610.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
+หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261031-e5fcc95.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
 
 ```sh
 cd /opt/ai-app/plenoi-get-job
-sudo tar -tzf previous-dist-20261030-0610.tar.gz
-sudo tar -xzf previous-dist-20261030-0610.tar.gz -C /opt/ai-app/plenoi-get-job
+sudo tar -tzf previous-dist-20261031-e5fcc95.tar.gz
+sudo tar -xzf previous-dist-20261031-e5fcc95.tar.gz -C /opt/ai-app/plenoi-get-job
 sudo docker compose up -d --build --no-deps web
 ```
 
-Release `f4f512e06a98c8f3b540dcdb0f39d9e82b76ac85` ใช้ browser build SHA-256 `63691929ca8ed848ea9b9e6012136a785603df506748d478e9b91cb164e944d8`. Production smoke check ผ่าน: 15 assets ตรงกันทุก byte, health 200, sibling `/mmit-bird/` ยังคงตอบ 302, office/choice feedback/story graph เปิดได้, ไม่มี browser page errors และไม่มี container อื่นถูก restart. ดูเวลาตรวจและรายละเอียดใน `qa/results/deployment.json`. การตรวจนี้ครอบคลุมเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.
+Release `e5fcc959622b5191a78bc0604b4e2c33cda788a` ใช้ browser build SHA-256 `fee51cdd019418ab47716d452cbf9c4f69e0389e6ac51cd948c7ae2145582d16`. Production smoke check ผ่าน: app และ `/healthz` ตอบ 200, sibling `/mmit-bird/` ตอบ 302, admin ยังคงต้องยืนยันตัวตน (401), ไฟล์ index/runtime/art/stylesheet/story map/manifest และ story graph ตรงกับ `dist/` ตาม SHA-256, ไม่มี page errors ใน browser QA และไม่มี container อื่นถูก restart. ดูเวลาตรวจและรายละเอียดใน `qa/results/deployment.json`. การตรวจนี้ครอบคลุมเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.

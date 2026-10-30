@@ -1,6 +1,6 @@
-# Review status — 2026-10-30, Asia/Bangkok
+# Review status — 2026-10-31, Asia/Bangkok
 
-**The final Game Designer and Storyboard Designer reviews are clean within their scopes; current release `f4f512e06a98c8f3b540dcdb0f39d9e82b76ac85` is live.** The first review loop completed seven rounds; follow-up batches corrected the CAMT instructor cast, interview art, and UX retry progression. The final Game Designer batch has five current-build JSON route reports; the Storyboard Designer completed five guided visual checks on the locked source, with screenshots but no per-round JSON. Review scope and limits are in [Final gameplay and scene review](FINAL_TEST_ROUNDS.md). A fresh engineering route completed all 80 decisions, four advisor visits, and both exams; it rendered 188 image frames with no page errors or non-GET requests on build `63691929ca8ed848ea9b9e6012136a785603df506748d478e9b91cb164e944d8`.
+**The final Game Designer and Storyboard Designer reviews are clean within their scopes; release `e5fcc959622b5191a78bc0604b4e2c33cda788a` is live.** The first review loop completed seven rounds; follow-up batches corrected the CAMT instructor cast, interview art, and UX retry progression. The final Game Designer batch has five current-build JSON route reports; the Storyboard Designer completed five guided visual checks on the locked source, with screenshots but no per-round JSON. Review scope and limits are in [Final gameplay and scene review](FINAL_TEST_ROUNDS.md). The current engineering route completed all 80 decisions, four advisor visits, and both exams; it rendered 228 image frames with no page errors or non-GET requests on build `fee51cdd019418ab47716d452cbf9c4f69e0389e6ac51cd948c7ae2145582d16`.
 
 ## Review history
 
@@ -12,7 +12,7 @@
 - **Batch 6:** the Thai teacher and novel editor found the risk-check option's communication/teamwork rationale unclear; the game reviewer considered the inference plausible and the student found no additional issue. Wording was clarified without changing effects. See [Batch 6 fixes](BATCH6_FIXES.md).
 - **Batch 7:** all four roles completed five fresh routes and the focused changed-choice check, with scoped clean results.
 
-Production verification passed on 2026-10-30 13:23 Asia/Bangkok: 15 assets matched byte-for-byte, app health returned 200, sibling `/mmit-bird/` kept its 302 response, and browser checks passed with zero page errors. The app container is healthy; Caddy and both sibling containers stayed running with restart count zero. Details: [`qa/results/deployment.json`](results/deployment.json). This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the review scope and limits.
+Production verification passed on 2026-10-31 Asia/Bangkok: deployed index, runtime, art, stylesheet, story map, graph manifest and the 83.8MB compressed story graph matched local `dist` byte-for-byte; app and health endpoints returned 200; sibling `/mmit-bird/` kept its 302 response; admin remained protected by authentication; and local browser checks passed with zero page errors. The app container is healthy; Caddy and both sibling containers remained up for seven days with no restart. Rollback archive: `/opt/ai-app/plenoi-get-job/previous-dist-20261031-e5fcc95.tar.gz`. Details: [`qa/results/deployment.json`](results/deployment.json). This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the review scope and limits.
 
 ## Limits
 
