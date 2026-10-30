@@ -1,5 +1,13 @@
 # Verification handoff — 2026-10-30
 
+## Current release candidate
+
+- Current browser regression build SHA-256: `4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a`.
+- `npm test` reports 18 core checks passed; the story archive contains 161,000 nodes, 640,000 choices, and 1,000 ending leaves; practical training has 41 lesson templates.
+- After the asset cache-version update, the final synthetic browser route completed 80 decisions, four advisor visits and both exams, rendered 188 image frames, and reported zero page errors and zero non-GET requests. Report: `qa/results/game-programmer-round8/game/round-8/report.json`.
+- The two-role Game Designer and Storyboard Designer loop ran seven rounds and closed with no scoped finding. This is AI-assisted scripted review, not human playtesting; see `qa/FINAL_TEST_ROUNDS.md` for the scope and limits.
+- Deployment verification for this release is recorded in `qa/results/deployment.json` after rollout.
+
 ## Frozen build and independent review
 
 - Browser build SHA-256 (same input formula as `qa/browser-tests.js`): `b2149ded4effa75096bca82e02f20d951669f2e406b6645fa4d83172155e23a1`.

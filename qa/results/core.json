@@ -1,7 +1,8 @@
 {
   "passed": true,
-  "checks": 17,
+  "checks": 18,
   "names": [
+    "Changed front-end assets have bumped cache versions",
     "CV skill evidence separates job families",
     "Negation, interests and token boundaries do not create evidence",
     "Every graph node has a scene and four causal edges; endings are leaves",
@@ -22,5 +23,5 @@
   ],
   "nodeCount": 161000,
   "edges": 640000,
-  "templates": 40
+  "templates": 41
 }

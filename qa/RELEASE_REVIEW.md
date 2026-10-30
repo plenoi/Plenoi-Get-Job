@@ -1,5 +1,7 @@
 # Release review — Batch 7
 
+> **Release status note (2026-10-30):** Batch 7 below is historical evidence from the earlier four-role review. The final two-role Game Designer + Storyboard Designer review completed seven rounds, with Round 7 clean within its scoped checks. The subsequent post-cache-bump engineering route passed 18 core checks and completed 80 decisions, four advisor visits, both exams, and 188 rendered image frames with zero browser errors or non-GET requests. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for methods, build hash, and limits. Production evidence will be recorded in `qa/results/deployment.json` for this release.
+
 Date: 2026-10-30 (Asia/Bangkok). Batch 7 is clean within the four reviewed scopes. All reviewers used frozen browser build `b2149ded4effa75096bca82e02f20d951669f2e406b6645fa4d83172155e23a1` and each completed five fresh scripted full routes plus one focused rendered-browser check of the revised `advancedTask` choice 0.
 
 ## Independent review matrix

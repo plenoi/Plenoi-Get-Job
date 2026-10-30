@@ -1,6 +1,6 @@
 # Review status — 2026-10-30, Asia/Bangkok
 
-**Batch 7 is clean within the four reviewed scopes. No review batch is pending.** The four reviewers each completed five fresh scripted browser routes and one focused rendered-browser check of the Batch 6 wording change on browser build `b2149ded4effa75096bca82e02f20d951669f2e406b6645fa4d83172155e23a1`. All 20 route reports passed with zero page errors, zero non-GET requests, and no findings; the exact reports were audited for matching build hash, role/round, and unique seeds per role. See [Batch 7 release review](RELEASE_REVIEW.md) and the four linked role reports.
+**The two-role final review completed seven rounds with no scoped finding left open.** The prior four-role Batch 7 record below remains historical. The final Round 7 notes and limits are in [Final gameplay and scene review](FINAL_TEST_ROUNDS.md). A post-cache-bump engineering route completed all 80 decisions, four advisor visits, and both exams; it rendered 188 image frames with no page errors or non-GET requests on build `4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a`.
 
 ## Review history
 
@@ -12,7 +12,7 @@
 - **Batch 6:** the Thai teacher and novel editor found the risk-check option's communication/teamwork rationale unclear; the game reviewer considered the inference plausible and the student found no additional issue. Wording was clarified without changing effects. See [Batch 6 fixes](BATCH6_FIXES.md).
 - **Batch 7:** all four roles completed five fresh routes and the focused changed-choice check, with scoped clean results.
 
-The current review is complete for its stated sample and checks. Production rollout is confirmed at [the HTTPS game URL](https://89.45.45.73/Plenoi-Get-Job/); the 15-asset byte comparison and browser smoke check passed. Details: [`qa/results/deployment.json`](results/deployment.json). This does not establish exhaustive live behavior. Source and QA documentation are pushed to private GitHub through `5180a2cf8f09f598df539c7ccdbf787f2ceb7198`; the documentation-only commit does not change the deployed runtime build.
+The two-role review is complete for its stated sample and checks. Final production verification is recorded in [`qa/results/deployment.json`](results/deployment.json) after deployment. This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the current run and its limits.
 
 ## Limits
 
