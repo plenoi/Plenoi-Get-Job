@@ -128,9 +128,109 @@
     "evaluatorConsistent": true,
     "interviewFeedbackConsistent": true,
     "lessonDistinct": true,
-    "lessonSpeaker": "อ.จิรภา · การสื่อสารและการทำงานร่วมกัน"
+    "lessonSpeaker": "อ.สิริกร สันติสื่อสาร · การสื่อสารและประสานงานโครงการ",
+    "failedOutcome": {
+      "heading": "ยังไม่ผ่านรอบนี้",
+      "speaker": "📘 มีจุดให้ฝึก\n\nคุณเลือก: ดำเนินเหตุการณ์ตามสถานการณ์\n\nผู้สัมภาษณ์ AI: คะแนนรวม 0/100 (เกณฑ์อย่างน้อย 67) และยังไม่มีคำตอบถูกในทักษะหลัก UX และการเข้าถึง (0/2) ต้องฝึกแล้วลองใหม่\n\nสถานะ: ผู้ประเมินใช้เกณฑ์ ไม่แสดงอารมณ์",
+      "family": "design",
+      "score": 0,
+      "mode": "academy",
+      "interviewComposition": true
+    },
+    "passedOutcome": {
+      "heading": "ทีมยินดีรับคุณเข้าฝึก",
+      "family": "design",
+      "score": 100,
+      "mode": "office",
+      "interviewComposition": true
+    },
+    "uxProgression": {
+      "jobIndex": 7,
+      "family": "design",
+      "firstDomains": [
+        "ux",
+        "ux",
+        "qa",
+        "data",
+        "communication",
+        "planning"
+      ],
+      "firstFailure": {
+        "score": 0,
+        "passed": false,
+        "mode": "academy"
+      },
+      "practice": [
+        {
+          "id": "focus:4141770279",
+          "template": "focus",
+          "review": false,
+          "skill": 36,
+          "level": 2
+        },
+        {
+          "id": "error:377720491",
+          "template": "error",
+          "review": false,
+          "skill": 42,
+          "level": 2
+        },
+        {
+          "id": "contrast:1094996004",
+          "template": "contrast",
+          "review": true,
+          "skill": 48,
+          "level": 3
+        },
+        {
+          "id": "experiment:130349429",
+          "template": "experiment",
+          "review": false,
+          "skill": 54,
+          "level": 3
+        },
+        {
+          "id": "experiment:2755637429",
+          "template": "experiment",
+          "review": false,
+          "skill": 60,
+          "level": 3
+        },
+        {
+          "id": "experiment:1480989392",
+          "template": "experiment",
+          "review": false,
+          "skill": 65,
+          "level": 3
+        }
+      ],
+      "retryDomains": [
+        "ux",
+        "ux",
+        "qa",
+        "data",
+        "communication",
+        "planning"
+      ],
+      "retry": {
+        "score": 100,
+        "passed": true,
+        "primary": "design",
+        "primaryCorrect": 2,
+        "mode": "office"
+      }
+    }
   },
   "emojiFeedback": "✅ หลักฐานถึงเกณฑ์",
+  "facultyPreview": {
+    "prehireVisible": true,
+    "artDistinct": 8,
+    "lessonSpeaker": "อ.กฤตโค้ด ทองคู่บั๊ก · ซอฟต์แวร์และการประยุกต์ใช้เทคโนโลยีดิจิทัล",
+    "advisorSpeaker": "อ.กฤตโค้ด ทองคู่บั๊ก · ซอฟต์แวร์และการประยุกต์ใช้เทคโนโลยีดิจิทัล",
+    "lessonTeacher": "อ.กฤตโค้ด ทองคู่บั๊ก",
+    "advisorTeacher": "อ.กฤตโค้ด ทองคู่บั๊ก",
+    "sourceLink": "https://www.camt.cmu.ac.th/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3/mmit-%E0%B8%AA%E0%B8%B2%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%A2/"
+  },
   "teacherIdentity": true,
   "nonPatchHeadings": true,
   "uniqueInterview": true,

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "checks": 18,
+  "checks": 19,
   "names": [
     "Changed front-end assets have bumped cache versions",
     "CV skill evidence separates job families",
@@ -19,7 +19,8 @@
     "Assessment, personal needs and individual relationships are real state",
     "Threshold gates link to explicit scene choices and actual next nodes",
     "Exactly one thousand distinct ending leaves round trip",
-    "Specialist job titles are not interchangeable with related broad CVs"
+    "Specialist job titles are not interchangeable with related broad CVs",
+    "CAMT MMIT fictional coaches are sourced, visible by domain, and visually distinct"
   ],
   "nodeCount": 161000,
   "edges": 640000,
