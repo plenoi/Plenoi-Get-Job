@@ -57,13 +57,13 @@ sudo docker compose logs --tail=100 web
 sudo docker compose up -d --build --no-deps web
 ```
 
-หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261029.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
+หากต้อง rollback ให้แตกไฟล์สำรอง `previous-dist-20261030-0357.tar.gz` จาก root ของโครงการ ไฟล์เก็บ path ที่ขึ้นต้นด้วย `dist/` แล้ว build service `web` ของโครงการนี้ใหม่:
 
 ```sh
 cd /opt/ai-app/plenoi-get-job
-sudo tar -tzf previous-dist-20261029.tar.gz
-sudo tar -xzf previous-dist-20261029.tar.gz -C /opt/ai-app/plenoi-get-job
+sudo tar -tzf previous-dist-20261030-0357.tar.gz
+sudo tar -xzf previous-dist-20261030-0357.tar.gz -C /opt/ai-app/plenoi-get-job
 sudo docker compose up -d --build --no-deps web
 ```
 
-Compose เป็นโครงการแยก ใช้ proxy network เดิม ไม่มีการเปิดพอร์ตโฮสต์ใหม่ คำสั่งข้างต้นไม่ต้องหยุดหรือ prune โครงการอื่น และไม่เปลี่ยน proxy. Production smoke check ของ release ปัจจุบันผ่านแล้ว; ดูผลและเวลาตรวจใน `qa/results/deployment.json`. การตรวจนี้ยืนยันเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.
+Release `4a6bb1e65257bd2b3e5dd9f5d114142f3369db21` ใช้ browser build SHA-256 `4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a`. Production smoke check ผ่าน: 15 assets ตรงกันทุก byte, health 200, sibling `/mmit-bird/` ยังคงตอบ 302, office/choice feedback/story graph เปิดได้, ไม่มี browser page errors และไม่มี container อื่นถูก restart. ดูเวลาตรวจและรายละเอียดใน `qa/results/deployment.json`. การตรวจนี้ครอบคลุมเฉพาะ assets และเส้นทาง UI ที่ระบุ ไม่ได้ทดสอบทุกเส้นทางของเกม. ข้อมูลส่วนตัวของผู้เล่นไม่ต้องใช้ฐานข้อมูล บัญชีผู้ดูแลและ SSH อยู่ในไฟล์/ช่องทางที่ละเว้นจาก Git และห้าม commit secrets.

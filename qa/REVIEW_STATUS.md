@@ -12,7 +12,7 @@
 - **Batch 6:** the Thai teacher and novel editor found the risk-check option's communication/teamwork rationale unclear; the game reviewer considered the inference plausible and the student found no additional issue. Wording was clarified without changing effects. See [Batch 6 fixes](BATCH6_FIXES.md).
 - **Batch 7:** all four roles completed five fresh routes and the focused changed-choice check, with scoped clean results.
 
-The two-role review is complete for its stated sample and checks. Final production verification is recorded in [`qa/results/deployment.json`](results/deployment.json) after deployment. This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the current run and its limits.
+The two-role review is complete for its stated sample and checks. Release `4a6bb1e65257bd2b3e5dd9f5d114142f3369db21` is live at [the HTTPS game URL](https://89.45.45.73/Plenoi-Get-Job/). Production verification passed on 2026-10-30 11:01 Asia/Bangkok: 15 assets matched byte-for-byte, app health returned 200, sibling `/mmit-bird/` kept its 302 response, and browser checks passed with zero page errors. The app container is healthy; Caddy and both sibling containers stayed running with restart count zero. Details: [`qa/results/deployment.json`](results/deployment.json). This does not establish exhaustive live behavior. See [Final gameplay and scene review](FINAL_TEST_ROUNDS.md) for the review scope and limits.
 
 ## Limits
 

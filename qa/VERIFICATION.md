@@ -6,7 +6,7 @@
 - `npm test` reports 18 core checks passed; the story archive contains 161,000 nodes, 640,000 choices, and 1,000 ending leaves; practical training has 41 lesson templates.
 - After the asset cache-version update, the final synthetic browser route completed 80 decisions, four advisor visits and both exams, rendered 188 image frames, and reported zero page errors and zero non-GET requests. Report: `qa/results/game-programmer-round8/game/round-8/report.json`.
 - The two-role Game Designer and Storyboard Designer loop ran seven rounds and closed with no scoped finding. This is AI-assisted scripted review, not human playtesting; see `qa/FINAL_TEST_ROUNDS.md` for the scope and limits.
-- Deployment verification for this release is recorded in `qa/results/deployment.json` after rollout.
+- Runtime commit `4a6bb1e65257bd2b3e5dd9f5d114142f3369db21` is live. Production verification byte-matched all 15 assets, confirmed app health 200, sibling `/mmit-bird/` status 302, and passed office/choice-feedback/story-graph browser checks with zero page errors. App health is `healthy`; Caddy and both sibling containers retained their prior start times and restart count zero. See `qa/results/deployment.json`.
 
 ## Frozen build and independent review
 

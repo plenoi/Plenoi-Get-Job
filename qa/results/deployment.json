@@ -1,6 +1,8 @@
 {
   "passed": true,
-  "commit": "dcf6a6d9856dd742f620cc93284ec7a0dec1cd86",
+  "commit": "4a6bb1e65257bd2b3e5dd9f5d114142f3369db21",
+  "browserBuildHash": "4a3c5ef9a8f96df0e40029566756442b27e2c48a6c9c657a3b9cf068ae6f5b4a",
+  "url": "https://89.45.45.73/Plenoi-Get-Job/",
   "byteVerifiedAssets": 15,
   "appHealth": 200,
   "siblingStatus": 302,
@@ -8,5 +10,12 @@
   "choiceFeedback": true,
   "graph": true,
   "pageErrors": [],
-  "checkedAt": "2026-10-29T17:11:38.732Z"
+  "containers": {
+    "plenoi-get-job-web": { "state": "running", "health": "healthy", "restartCount": 0 },
+    "vps-infra-caddy-1": { "state": "running", "restartCount": 0 },
+    "mmit-bird-web-1": { "state": "running", "health": "healthy", "restartCount": 0 },
+    "mmit-bird-worker-1": { "state": "running", "health": "healthy", "restartCount": 0 }
+  },
+  "distBackup": "previous-dist-20261030-0357.tar.gz",
+  "checkedAt": "2026-10-30T04:01:12.762Z"
 }
