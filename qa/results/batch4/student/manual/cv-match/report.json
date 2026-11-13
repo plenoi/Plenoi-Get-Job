@@ -1,9 +1,0 @@
-{
-  "passed": true,
-  "pdfExtracted": true,
-  "typedPatches": true,
-  "graphExplorer": true,
-  "pageErrors": [],
-  "nonGETRequests": [],
-  "buildHash": "c85f054997843d75cd41678ed6e2bdec36b03bff9ac391c726622cbb18b1bdc6"
-}

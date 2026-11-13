@@ -1,7 +1,9 @@
-
-# Local deployment credentials and environment files
 .deploy-secrets/
 .env
 .env.*
 !.env.example
-qa/results/**/*.png
+node_modules/
+dist/
+storygraph/
+story-pilot/v1/ROLE-*/
+story-pilot/v1/progress.json

@@ -1,1 +1,0 @@
-PDF.js 3.11.174 browser library and worker, distributed under Apache License 2.0 by Mozilla Foundation. Original license notices are retained in both files. Source: https://github.com/mozilla/pdf.js/releases/tag/v3.11.174 ; copied from the versioned cdnjs distribution. These files are served locally so CV parsing does not need a remote PDF worker. CV bytes remain in the browser.

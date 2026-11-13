@@ -1,6 +1,30 @@
+# Linux is the primary runtime. Keep text files LF on every platform.
+* text=auto eol=lf
+
 *.js text eol=lf
-*.css text eol=lf
-*.html text eol=lf
+*.cjs text eol=lf
+*.mjs text eol=lf
 *.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
 *.md text eol=lf
-*.gz binary
+*.txt text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+Dockerfile text eol=lf
+*.conf text eol=lf
+
+# Never apply text conversion to binary assets.
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.webp -text
+*.ico -text
+*.pdf -text
+*.woff -text
+*.woff2 -text
+*.zip -text
+*.gz -text
